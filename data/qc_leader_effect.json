@@ -1,0 +1,27 @@
+{
+  "target_year": 2030,
+  "effects": {
+    "arrivee": {
+      "n": 8,
+      "specification": "plate",
+      "delta_2030": 0.32837357934423833,
+      "sd_2030": 0.3791693292054412,
+      "flat_mean": 0.32837357934423833
+    },
+    "continuation": {
+      "n": 14,
+      "specification": "plate",
+      "delta_2030": 0.1308409980320885,
+      "sd_2030": 0.29107948158553715,
+      "flat_mean": 0.1308409980320885
+    },
+    "depart": {
+      "n": 15,
+      "specification": "plate",
+      "delta_2030": -0.10713002930080802,
+      "sd_2030": 0.4032187404007369,
+      "flat_mean": -0.10713002930080802
+    }
+  },
+  "note": "exces log vs contrefactuel de swing uniforme ILR, 1976-2026 ; moyenne plate ou GP Matern sur l annee selon la prevision sequentielle (tools/build_leader_effect.mjs)"
+}

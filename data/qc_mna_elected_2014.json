@@ -1,0 +1,630 @@
+{
+ "source": "Wikipédia, « 41e législature du Québec », députés élus à la générale du 7 avril 2014 (125 ; élus de partielles exclus)",
+ "members": [
+  {
+   "riding": "Abitibi-Est",
+   "name": "Guy Bourgeois",
+   "party": "LIB"
+  },
+  {
+   "riding": "Abitibi-Ouest",
+   "name": "François Gendron",
+   "party": "PQ"
+  },
+  {
+   "riding": "Acadie",
+   "name": "Christine St-Pierre",
+   "party": "LIB"
+  },
+  {
+   "riding": "Anjou–Louis-Riel",
+   "name": "Lise Thériault",
+   "party": "LIB"
+  },
+  {
+   "riding": "Argenteuil",
+   "name": "Yves St-Denis",
+   "party": "LIB"
+  },
+  {
+   "riding": "Arthabaska",
+   "name": "Sylvie Roy",
+   "party": "CAQ"
+  },
+  {
+   "riding": "Beauce-Nord",
+   "name": "André Spénard",
+   "party": "CAQ"
+  },
+  {
+   "riding": "Beauce-Sud",
+   "name": "Robert Dutil",
+   "party": "LIB"
+  },
+  {
+   "riding": "Beauharnois",
+   "name": "Guy Leclair",
+   "party": "PQ"
+  },
+  {
+   "riding": "Bellechasse",
+   "name": "Dominique Vien",
+   "party": "LIB"
+  },
+  {
+   "riding": "Berthier",
+   "name": "André Villeneuve",
+   "party": "PQ"
+  },
+  {
+   "riding": "Bertrand",
+   "name": "Claude Cousineau",
+   "party": "PQ"
+  },
+  {
+   "riding": "Blainville",
+   "name": "Mario Laframboise",
+   "party": "CAQ"
+  },
+  {
+   "riding": "Bonaventure",
+   "name": "Sylvain Roy",
+   "party": "PQ"
+  },
+  {
+   "riding": "Borduas",
+   "name": "Simon Jolin-Barrette",
+   "party": "CAQ"
+  },
+  {
+   "riding": "Bourassa-Sauvé",
+   "name": "Rita de Santis",
+   "party": "LIB"
+  },
+  {
+   "riding": "Bourget",
+   "name": "Maka Kotto",
+   "party": "PQ"
+  },
+  {
+   "riding": "Brome-Missisquoi",
+   "name": "Pierre Paradis",
+   "party": "LIB"
+  },
+  {
+   "riding": "Chambly",
+   "name": "Jean-François Roberge",
+   "party": "CAQ"
+  },
+  {
+   "riding": "Champlain",
+   "name": "Pierre-Michel Auger",
+   "party": "LIB"
+  },
+  {
+   "riding": "Chapleau",
+   "name": "Marc Carrière",
+   "party": "LIB"
+  },
+  {
+   "riding": "Charlesbourg",
+   "name": "François Blais",
+   "party": "LIB"
+  },
+  {
+   "riding": "Charlevoix–Côte-de-Beaupré",
+   "name": "Caroline Simard",
+   "party": "LIB"
+  },
+  {
+   "riding": "Châteauguay",
+   "name": "Pierre Moreau",
+   "party": "LIB"
+  },
+  {
+   "riding": "Chauveau",
+   "name": "Gérard Deltell",
+   "party": "CAQ"
+  },
+  {
+   "riding": "Chicoutimi",
+   "name": "Stéphane Bédard",
+   "party": "PQ"
+  },
+  {
+   "riding": "Chomedey",
+   "name": "Guy Ouellette",
+   "party": "LIB"
+  },
+  {
+   "riding": "Chutes-de-la-Chaudière",
+   "name": "Marc Picard",
+   "party": "CAQ"
+  },
+  {
+   "riding": "Côte-du-Sud",
+   "name": "Norbert Morin",
+   "party": "LIB"
+  },
+  {
+   "riding": "Crémazie",
+   "name": "Marie Montpetit",
+   "party": "LIB"
+  },
+  {
+   "riding": "D'Arcy-McGee",
+   "name": "David Birnbaum",
+   "party": "LIB"
+  },
+  {
+   "riding": "Deux-Montagnes",
+   "name": "Benoit Charette",
+   "party": "CAQ"
+  },
+  {
+   "riding": "Drummond–Bois-Francs",
+   "name": "Sébastien Schneeberger",
+   "party": "CAQ"
+  },
+  {
+   "riding": "Dubuc",
+   "name": "Serge Simard",
+   "party": "LIB"
+  },
+  {
+   "riding": "Duplessis",
+   "name": "Lorraine Richard",
+   "party": "PQ"
+  },
+  {
+   "riding": "Fabre",
+   "name": "Gilles Ouimet",
+   "party": "LIB"
+  },
+  {
+   "riding": "Gaspé",
+   "name": "Gaétan Lelièvre",
+   "party": "PQ"
+  },
+  {
+   "riding": "Gatineau",
+   "name": "Stéphanie Vallée",
+   "party": "LIB"
+  },
+  {
+   "riding": "Gouin",
+   "name": "Françoise David",
+   "party": "QS"
+  },
+  {
+   "riding": "Granby",
+   "name": "François Bonnardel",
+   "party": "CAQ"
+  },
+  {
+   "riding": "Groulx",
+   "name": "Claude Surprenant",
+   "party": "CAQ"
+  },
+  {
+   "riding": "Hochelaga-Maisonneuve",
+   "name": "Carole Poirier",
+   "party": "PQ"
+  },
+  {
+   "riding": "Hull",
+   "name": "Maryse Gaudreault",
+   "party": "LIB"
+  },
+  {
+   "riding": "Huntingdon",
+   "name": "Stéphane Billette",
+   "party": "LIB"
+  },
+  {
+   "riding": "Iberville",
+   "name": "Claire Samson",
+   "party": "CAQ"
+  },
+  {
+   "riding": "Îles-de-la-Madeleine",
+   "name": "Germain Chevarie",
+   "party": "LIB"
+  },
+  {
+   "riding": "Jacques-Cartier",
+   "name": "Geoffrey Kelley",
+   "party": "LIB"
+  },
+  {
+   "riding": "Jean-Lesage",
+   "name": "André Drolet",
+   "party": "LIB"
+  },
+  {
+   "riding": "Jean-Talon",
+   "name": "Yves Bolduc",
+   "party": "LIB"
+  },
+  {
+   "riding": "Jeanne-Mance–Viger",
+   "name": "Filomena Rotiroti",
+   "party": "LIB"
+  },
+  {
+   "riding": "Johnson",
+   "name": "André Lamontagne",
+   "party": "CAQ"
+  },
+  {
+   "riding": "Joliette",
+   "name": "Véronique Hivon",
+   "party": "PQ"
+  },
+  {
+   "riding": "Jonquière",
+   "name": "Sylvain Gaudreault",
+   "party": "PQ"
+  },
+  {
+   "riding": "L'Assomption",
+   "name": "François Legault",
+   "party": "CAQ"
+  },
+  {
+   "riding": "La Peltrie",
+   "name": "Éric Caire",
+   "party": "CAQ"
+  },
+  {
+   "riding": "La Pinière",
+   "name": "Gaétan Barrette",
+   "party": "LIB"
+  },
+  {
+   "riding": "La Prairie",
+   "name": "Richard Merlini",
+   "party": "LIB"
+  },
+  {
+   "riding": "Labelle",
+   "name": "Sylvain Pagé",
+   "party": "PQ"
+  },
+  {
+   "riding": "Lac-Saint-Jean",
+   "name": "Alexandre Cloutier",
+   "party": "PQ"
+  },
+  {
+   "riding": "LaFontaine",
+   "name": "Marc Tanguay",
+   "party": "LIB"
+  },
+  {
+   "riding": "Laporte",
+   "name": "Nicole Ménard",
+   "party": "LIB"
+  },
+  {
+   "riding": "Laurier-Dorion",
+   "name": "Gerry Sklavounos",
+   "party": "LIB"
+  },
+  {
+   "riding": "Laval-des-Rapides",
+   "name": "Saul Polo",
+   "party": "LIB"
+  },
+  {
+   "riding": "Laviolette",
+   "name": "Julie Boulet",
+   "party": "LIB"
+  },
+  {
+   "riding": "Lévis",
+   "name": "Christian Dubé",
+   "party": "CAQ"
+  },
+  {
+   "riding": "Lotbinière-Frontenac",
+   "name": "Laurent Lessard",
+   "party": "LIB"
+  },
+  {
+   "riding": "Louis-Hébert",
+   "name": "Sam Hamad",
+   "party": "LIB"
+  },
+  {
+   "riding": "Marguerite-Bourgeoys",
+   "name": "Robert Poeti",
+   "party": "LIB"
+  },
+  {
+   "riding": "Marie-Victorin",
+   "name": "Bernard Drainville",
+   "party": "PQ"
+  },
+  {
+   "riding": "Marquette",
+   "name": "François Ouimet",
+   "party": "LIB"
+  },
+  {
+   "riding": "Maskinongé",
+   "name": "Marc H. Plante",
+   "party": "LIB"
+  },
+  {
+   "riding": "Masson",
+   "name": "Mathieu Lemay",
+   "party": "CAQ"
+  },
+  {
+   "riding": "Matane-Matapédia",
+   "name": "Pascal Bérubé",
+   "party": "PQ"
+  },
+  {
+   "riding": "Mégantic",
+   "name": "Ghislain Bolduc",
+   "party": "LIB"
+  },
+  {
+   "riding": "Mercier",
+   "name": "Amir Khadir",
+   "party": "QS"
+  },
+  {
+   "riding": "Mille-Îles",
+   "name": "Francine Charbonneau",
+   "party": "LIB"
+  },
+  {
+   "riding": "Mirabel",
+   "name": "Sylvie D'Amours",
+   "party": "CAQ"
+  },
+  {
+   "riding": "Mont-Royal",
+   "name": "Pierre Arcand",
+   "party": "LIB"
+  },
+  {
+   "riding": "Montarville",
+   "name": "Nathalie Roy",
+   "party": "CAQ"
+  },
+  {
+   "riding": "Montmorency",
+   "name": "Raymond Bernier",
+   "party": "LIB"
+  },
+  {
+   "riding": "Nelligan",
+   "name": "Martin Coiteux",
+   "party": "LIB"
+  },
+  {
+   "riding": "Nicolet-Bécancour",
+   "name": "Donald Martel",
+   "party": "CAQ"
+  },
+  {
+   "riding": "Notre-Dame-de-Grâce",
+   "name": "Kathleen Weil",
+   "party": "LIB"
+  },
+  {
+   "riding": "Orford",
+   "name": "Pierre Reid",
+   "party": "LIB"
+  },
+  {
+   "riding": "Outremont",
+   "name": "Hélène David",
+   "party": "LIB"
+  },
+  {
+   "riding": "Papineau",
+   "name": "Alexandre Iracà",
+   "party": "LIB"
+  },
+  {
+   "riding": "Pointe-aux-Trembles",
+   "name": "Nicole Léger",
+   "party": "PQ"
+  },
+  {
+   "riding": "Pontiac",
+   "name": "André Fortin",
+   "party": "LIB"
+  },
+  {
+   "riding": "Portneuf",
+   "name": "Michel Matte",
+   "party": "LIB"
+  },
+  {
+   "riding": "René-Lévesque",
+   "name": "Marjolain Dufour",
+   "party": "PQ"
+  },
+  {
+   "riding": "Repentigny",
+   "name": "Lise Lavallée",
+   "party": "CAQ"
+  },
+  {
+   "riding": "Richelieu",
+   "name": "Élaine Zakaïb",
+   "party": "PQ"
+  },
+  {
+   "riding": "Richmond",
+   "name": "Karine Vallières",
+   "party": "LIB"
+  },
+  {
+   "riding": "Rimouski",
+   "name": "Harold LeBel",
+   "party": "PQ"
+  },
+  {
+   "riding": "Rivière-du-Loup–Témiscouata",
+   "name": "Jean D'Amour",
+   "party": "LIB"
+  },
+  {
+   "riding": "Robert-Baldwin",
+   "name": "Carlos J. Leitão",
+   "party": "LIB"
+  },
+  {
+   "riding": "Roberval",
+   "name": "Philippe Couillard",
+   "party": "LIB"
+  },
+  {
+   "riding": "Rosemont",
+   "name": "Jean-François Lisée",
+   "party": "PQ"
+  },
+  {
+   "riding": "Rousseau",
+   "name": "Nicolas Marceau",
+   "party": "PQ"
+  },
+  {
+   "riding": "Rouyn-Noranda–Témiscamingue",
+   "name": "Luc Blanchette",
+   "party": "LIB"
+  },
+  {
+   "riding": "Saint-François",
+   "name": "Guy Hardy",
+   "party": "LIB"
+  },
+  {
+   "riding": "Saint-Henri–Sainte-Anne",
+   "name": "Marguerite Blais",
+   "party": "LIB"
+  },
+  {
+   "riding": "Saint-Hyacinthe",
+   "name": "Chantal Soucy",
+   "party": "CAQ"
+  },
+  {
+   "riding": "Saint-Jean",
+   "name": "Dave Turcotte",
+   "party": "PQ"
+  },
+  {
+   "riding": "Saint-Jérôme",
+   "name": "Pierre Karl Péladeau",
+   "party": "PQ"
+  },
+  {
+   "riding": "Saint-Laurent",
+   "name": "Jean-Marc Fournier",
+   "party": "LIB"
+  },
+  {
+   "riding": "Saint-Maurice",
+   "name": "Pierre Giguère",
+   "party": "LIB"
+  },
+  {
+   "riding": "Sainte-Marie–Saint-Jacques",
+   "name": "Manon Massé",
+   "party": "QS"
+  },
+  {
+   "riding": "Sainte-Rose",
+   "name": "Jean Habel",
+   "party": "LIB"
+  },
+  {
+   "riding": "Sanguinet",
+   "name": "Alain Therrien",
+   "party": "PQ"
+  },
+  {
+   "riding": "Sherbrooke",
+   "name": "Luc Fortin",
+   "party": "LIB"
+  },
+  {
+   "riding": "Soulanges",
+   "name": "Lucie Charlebois",
+   "party": "LIB"
+  },
+  {
+   "riding": "Taillon",
+   "name": "Diane Lamarre",
+   "party": "PQ"
+  },
+  {
+   "riding": "Taschereau",
+   "name": "Agnès Maltais",
+   "party": "PQ"
+  },
+  {
+   "riding": "Terrebonne",
+   "name": "Mathieu Traversy",
+   "party": "PQ"
+  },
+  {
+   "riding": "Trois-Rivières",
+   "name": "Jean-Denis Girard",
+   "party": "LIB"
+  },
+  {
+   "riding": "Ungava",
+   "name": "Jean Boucher",
+   "party": "LIB"
+  },
+  {
+   "riding": "Vachon",
+   "name": "Martine Ouellet",
+   "party": "PQ"
+  },
+  {
+   "riding": "Vanier-Les Rivières",
+   "name": "Patrick Huot",
+   "party": "LIB"
+  },
+  {
+   "riding": "Vaudreuil",
+   "name": "Marie-Claude Nichols",
+   "party": "LIB"
+  },
+  {
+   "riding": "Verchères",
+   "name": "Stéphane Bergeron",
+   "party": "PQ"
+  },
+  {
+   "riding": "Verdun",
+   "name": "Jacques Daoust",
+   "party": "LIB"
+  },
+  {
+   "riding": "Viau",
+   "name": "David Heurtel",
+   "party": "LIB"
+  },
+  {
+   "riding": "Vimont",
+   "name": "Jean Rousselle",
+   "party": "LIB"
+  },
+  {
+   "riding": "Westmount–Saint-Louis",
+   "name": "Jacques Chagnon",
+   "party": "LIB"
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+  "xgboost": {
+    "holdout_r2_mean": 0.3400734722810975,
+    "holdout_r2_sd": 0.06479565467734194,
+    "inter_transition_r2": -0.2775868933498735,
+    "coverage_90": 0.5699115044247788,
+    "interval_width": 0.6658042669296265
+  },
+  "gp_reference": {
+    "holdout_r2": 0.44,
+    "inter_transition_r2": -0.16
+  }
+}

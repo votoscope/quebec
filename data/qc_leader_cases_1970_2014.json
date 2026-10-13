@@ -1,0 +1,223 @@
+{
+ "source": "Atlas des élections (data/polls.duckdb, election_results), chefs et circonscriptions contestées tirés de Wikipédia (src/polls/model/leader_effect.py, tag python-archive), ligne Electeur_inscrits exclue, sigle Action_democratique_du_quebec rattaché à l ADQ",
+ "definition": "exces_log = log(part réelle / part prévue) du parti du chef dans la circonscription ; part prévue = parts de l élection précédente déplacées du swing provincial uniforme (ILR). arrivee : chef dans une circonscription qui n est pas la sienne ; continuation : même chef, même circonscription qu à l élection précédente ; depart : circonscription du chef précédent sans lui. Exclus : nouveau chef se présentant dans son propre siège (aucun effet appliqué par le modèle), parti sous 4 % à l élection précédente.",
+ "exclus": [
+  "chef sortant de son propre siège (partielle de Saint-Laurent, 1986)",
+  "cheffe sortante de son propre siège (partielle de Charlevoix, 2007)",
+  "nouveau chef dans son propre siège (Anjou)",
+  "nouveau chef dans son propre siège (Verchères)",
+  "porte-parole sans antécédent de chef dans la circonscription"
+ ],
+ "cases": [
+  {
+   "annee": 1976,
+   "annee_precedente": 1973,
+   "chef": "René Lévesque",
+   "parti": "PQ",
+   "circonscription": "Taillon",
+   "type": "arrivee",
+   "exces_log": 0.0242,
+   "swing_log": 0.31415
+  },
+  {
+   "annee": 1989,
+   "annee_precedente": 1985,
+   "chef": "Jacques Parizeau",
+   "parti": "PQ",
+   "circonscription": "L'Assomption",
+   "type": "arrivee",
+   "exces_log": 0.11999,
+   "swing_log": 0.03728
+  },
+  {
+   "annee": 1998,
+   "annee_precedente": 1994,
+   "chef": "Jean Charest",
+   "parti": "LIB",
+   "circonscription": "Sherbrooke",
+   "type": "arrivee",
+   "exces_log": 0.15062,
+   "swing_log": -0.01929
+  },
+  {
+   "annee": 2014,
+   "annee_precedente": 2012,
+   "chef": "Philippe Couillard",
+   "parti": "LIB",
+   "circonscription": "Roberval",
+   "type": "arrivee",
+   "exces_log": 0.35979,
+   "swing_log": 0.3118
+  },
+  {
+   "annee": 1976,
+   "annee_precedente": 1973,
+   "chef": "Robert Bourassa",
+   "parti": "LIB",
+   "circonscription": "Mercier",
+   "type": "continuation",
+   "exces_log": 0.11659,
+   "swing_log": -0.48125
+  },
+  {
+   "annee": 1981,
+   "annee_precedente": 1976,
+   "chef": "René Lévesque",
+   "parti": "PQ",
+   "circonscription": "Taillon",
+   "type": "continuation",
+   "exces_log": -0.04853,
+   "swing_log": 0.17438
+  },
+  {
+   "annee": 1994,
+   "annee_precedente": 1989,
+   "chef": "Jacques Parizeau",
+   "parti": "PQ",
+   "circonscription": "L'Assomption",
+   "type": "continuation",
+   "exces_log": 0.06149,
+   "swing_log": 0.1082
+  },
+  {
+   "annee": 2003,
+   "annee_precedente": 1998,
+   "chef": "Jean Charest",
+   "parti": "LIB",
+   "circonscription": "Sherbrooke",
+   "type": "continuation",
+   "exces_log": -0.09578,
+   "swing_log": 0.05453
+  },
+  {
+   "annee": 2007,
+   "annee_precedente": 2003,
+   "chef": "Jean Charest",
+   "parti": "LIB",
+   "circonscription": "Sherbrooke",
+   "type": "continuation",
+   "exces_log": 0.04173,
+   "swing_log": -0.3294
+  },
+  {
+   "annee": 2008,
+   "annee_precedente": 2007,
+   "chef": "Jean Charest",
+   "parti": "LIB",
+   "circonscription": "Sherbrooke",
+   "type": "continuation",
+   "exces_log": 0.04367,
+   "swing_log": 0.2405
+  },
+  {
+   "annee": 2012,
+   "annee_precedente": 2008,
+   "chef": "Jean Charest",
+   "parti": "LIB",
+   "circonscription": "Sherbrooke",
+   "type": "continuation",
+   "exces_log": -0.0106,
+   "swing_log": -0.29929
+  },
+  {
+   "annee": 2014,
+   "annee_precedente": 2012,
+   "chef": "Pauline Marois",
+   "parti": "PQ",
+   "circonscription": "Charlevoix—Côte-de-Beaupré",
+   "type": "continuation",
+   "exces_log": -0.01088,
+   "swing_log": -0.20516
+  },
+  {
+   "annee": 2014,
+   "annee_precedente": 2012,
+   "chef": "François Legault",
+   "parti": "CAQ",
+   "circonscription": "L'Assomption",
+   "type": "continuation",
+   "exces_log": 0.19834,
+   "swing_log": -0.13839
+  },
+  {
+   "annee": 1976,
+   "annee_precedente": 1973,
+   "chef": "René Lévesque",
+   "parti": "PQ",
+   "circonscription": "Dorion",
+   "type": "depart",
+   "exces_log": -0.16309,
+   "swing_log": 0.31415
+  },
+  {
+   "annee": 1981,
+   "annee_precedente": 1976,
+   "chef": "Robert Bourassa",
+   "parti": "LIB",
+   "circonscription": "Mercier",
+   "type": "depart",
+   "exces_log": -0.05981,
+   "swing_log": 0.31051
+  },
+  {
+   "annee": 1985,
+   "annee_precedente": 1981,
+   "chef": "René Lévesque",
+   "parti": "PQ",
+   "circonscription": "Taillon",
+   "type": "depart",
+   "exces_log": -0.13704,
+   "swing_log": -0.24139
+  },
+  {
+   "annee": 1989,
+   "annee_precedente": 1985,
+   "chef": "Pierre Marc Johnson",
+   "parti": "PQ",
+   "circonscription": "Anjou",
+   "type": "depart",
+   "exces_log": -0.13037,
+   "swing_log": 0.03728
+  },
+  {
+   "annee": 1994,
+   "annee_precedente": 1989,
+   "chef": "Robert Bourassa",
+   "parti": "LIB",
+   "circonscription": "Saint-Laurent",
+   "type": "depart",
+   "exces_log": 0.31747,
+   "swing_log": -0.11783
+  },
+  {
+   "annee": 1998,
+   "annee_precedente": 1994,
+   "chef": "Jacques Parizeau",
+   "parti": "PQ",
+   "circonscription": "L'Assomption",
+   "type": "depart",
+   "exces_log": 0.0462,
+   "swing_log": -0.04288
+  },
+  {
+   "annee": 2007,
+   "annee_precedente": 2003,
+   "chef": "Bernard Landry",
+   "parti": "PQ",
+   "circonscription": "Verchères",
+   "type": "depart",
+   "exces_log": -0.13778,
+   "swing_log": -0.15936
+  },
+  {
+   "annee": 2014,
+   "annee_precedente": 2012,
+   "chef": "Jean Charest",
+   "parti": "LIB",
+   "circonscription": "Sherbrooke",
+   "type": "depart",
+   "exces_log": -0.22719,
+   "swing_log": 0.3118
+  }
+ ]
+}

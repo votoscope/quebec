@@ -1,0 +1,25 @@
+{
+  "source": "Léger, « Les grandes tendances régionales », 25 août 2026 (data/raw/lus/Grand sondage régional Léger - juin à août 2026.pdf), pages 6 et 8-10",
+  "field": ["2026-06-12", "2026-08-24"],
+  "base": "électeurs décidés",
+  "n": 9235,
+  "weightVariance": 0.417,
+  "note": "Parts en % (arrondies par Léger). AUTRES n'est pas ventilé par région : complété à 100 dans le code. Extraction par couleur des barres vectorielles, vérifiée visuellement.",
+  "province": { "PQ": 30, "LIB": 23, "CAQ": 23, "PCQ": 16, "QS": 7, "AUTRES": 1 },
+  "groups": {
+    "MTL":     { "n": 1885, "shares": { "LIB": 40, "PQ": 19, "PCQ": 14, "CAQ": 14, "QS": 11 } },
+    "LAV":     { "n": 374,  "shares": { "LIB": 34, "PQ": 25, "CAQ": 24, "PCQ": 11, "QS": 5 } },
+    "LAN":     { "n": 461,  "shares": { "PQ": 39, "CAQ": 31, "PCQ": 12, "LIB": 11, "QS": 5 } },
+    "LAU":     { "n": 441,  "shares": { "PQ": 36, "CAQ": 26, "LIB": 19, "PCQ": 11, "QS": 7 } },
+    "MON":     { "n": 1297, "shares": { "PQ": 36, "CAQ": 28, "LIB": 19, "PCQ": 12, "QS": 5 } },
+    "CN":      { "n": 2358, "shares": { "PQ": 30, "PCQ": 29, "CAQ": 21, "LIB": 14, "QS": 6 } },
+    "CA":      { "n": 679,  "shares": { "PCQ": 36, "PQ": 24, "CAQ": 24, "LIB": 12, "QS": 4 } },
+    "BSL_GIM": { "n": 238,  "shares": { "PQ": 38, "CAQ": 30, "PCQ": 15, "LIB": 11, "QS": 4 } },
+    "SAG_CN":  { "n": 247,  "shares": { "PQ": 47, "CAQ": 24, "LIB": 13, "PCQ": 11, "QS": 5 } },
+    "MAU":     { "n": 264,  "shares": { "PQ": 38, "CAQ": 27, "PCQ": 19, "LIB": 8, "QS": 7 } },
+    "CDQ":     { "n": 189,  "shares": { "PQ": 39, "PCQ": 27, "CAQ": 14, "QS": 11, "LIB": 9 } },
+    "EST":     { "n": 363,  "shares": { "PQ": 36, "CAQ": 26, "LIB": 16, "PCQ": 13, "QS": 9 } },
+    "AT_NQ":   { "n": 112,  "shares": { "CAQ": 35, "PQ": 26, "PCQ": 17, "LIB": 16, "QS": 6 } },
+    "OUT":     { "n": 327,  "shares": { "LIB": 34, "CAQ": 24, "PQ": 20, "PCQ": 15, "QS": 6 } }
+  }
+}

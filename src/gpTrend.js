@@ -1,0 +1,462 @@
+/**
+ * Smooth party-support trend + uncertainty over time via Gaussian process
+ * regression in ILR space.
+ *
+ * ILR, not CLR. The previous version fit CLR coordinates, dropped the last
+ * one and reconstructed it at sampling time as minus-the-sum of independent
+ * draws -- which made that coordinate's variance the SUM of the other five,
+ * and because pivotPolls sorts parties alphabetically, the party carrying
+ * the inflated variance was QS. An alphabetical accident deciding whose
+ * credible band is widest is exactly the degenerate-basis trap the project's
+ * own notes warn about. ILR gives k-1 orthonormal, full-rank coordinates:
+ * every party is treated symmetrically and nothing is reconstructed.
+ *
+ * One GP per ILR coordinate, still independent across coordinates: the
+ * cross-coordinate covariance (e.g. CAQ losses flowing to the PQ) is NOT
+ * modelled. That is a real simplification, stated here rather than hidden.
+ *
+ * Since @tangent.to/ds 0.13 the GP machinery lives in the library:
+ * GaussianProcessRegressor takes a per-observation noise VECTOR as `alpha`
+ * (verified to match the previous hand-rolled implementation to 1e-6 on lml,
+ * mean and std), and kernels are composable objects -- so the changepoint
+ * structure is a small Kernel subclass rather than a whole parallel GP
+ * implementation. The overall noise scale stays a grid-searched
+ * hyperparameter: it decides how much poll-to-poll scatter is sampling error
+ * versus real movement, i.e. the width of every interval downstream.
+ */
+
+import { ml, mva } from "@tangent.to/ds";
+import { toClosedComposition, sampleSizeWeight, ilrSamplingVariance } from "./compositional.js";
+import { CHANGEPOINTS, CAMPAIGNS } from "./cycles.js";
+
+const { ilr, ilrInv } = mva.composition;
+
+function daysSince(t0, date) {
+  return (new Date(date).getTime() - new Date(t0).getTime()) / 86_400_000;
+}
+
+// CHANGEPOINTS and CAMPAIGNS are imported from ./cycles.js
+// (centralized cycle constants, see RUNBOOK §4 and data/qc_cycles.json).
+// CHANGEPOINTS: documented regime changes in the party system (ISO dates).
+//   A stationary kernel assumes the dynamics never change regime; crossing
+//   a changepoint multiplies the kernel by rho <= 1, letting the fit
+//   partially decorrelate regimes. rho is a fitted hyperparameter chosen
+//   by marginal likelihood; rho = 1 recovers the stationary model exactly.
+const RHO_GRID = [0.15, 0.4, 0.7, 1.0];
+
+// CAMPAIGNS: [writ drop, election day] windows for all cycles (ISO dates).
+//   Opinion moves faster during a campaign than the twelve-year average;
+//   one calendar day inside a campaign counts as `dilation` days of kernel
+//   time, shortening the effective length scale there. The dilation factor
+//   is shared across ALL campaign windows, identified mostly by past
+//   campaigns; dilation = 1 is on the grid and recovers the undilated model.
+// The grid ends at 16 even though some coordinates choose it: inside a
+// campaign only the EFFECTIVE scale lengthScale/dilation is identified, so
+// past 8 the likelihood slides along a (lengthScale x dilation) ridge --
+// extending the grid moves the pair (680x8 -> 1000x16) without moving the
+// posterior (nowcast stable to 0.1pp). The boundary-maximum rule is about a
+// clipped optimum; a ridge endpoint is not one.
+const DILATION_GRID = [1, 2, 4, 8, 16];
+
+function regimeOf(day, cpDays) {
+  let r = 0;
+  for (const c of cpDays) if (day >= c) r++;
+  return r;
+}
+
+/** Cumulative campaign days elapsed before `day`. */
+function campaignDaysOf(day, windows) {
+  let c = 0;
+  for (const [a, b] of windows) c += Math.max(0, Math.min(day, b) - a);
+  return c;
+}
+
+/** Matérn-3/2 over campaign-dilated time, multiplied by rho^|regime
+ * difference|. Input rows are [day, regime, campaignDays] -- regime index and
+ * cumulative campaign days are data, precomputed per observation, so the
+ * kernel stays a pure function of two rows, which is all the library's
+ * Kernel contract asks for. The dilated coordinate is w(t) = t +
+ * (dilation-1)*c(t), a monotone 1-D warp, so the kernel remains a valid
+ * Matérn on a transformed axis (PSD by construction). rho = 1 and
+ * dilation = 1 recover the plain stationary Matérn exactly. */
+export class ChangepointKernel extends ml.Kernel {
+  constructor({ lengthScale = 100, rho = 1, dilation = 1 } = {}) {
+    super();
+    this.lengthScale = lengthScale;
+    this.rho = rho;
+    this.dilation = dilation;
+  }
+
+  compute(a, b) {
+    const dt = (a[0] - b[0]) + (this.dilation - 1) * (a[2] - b[2]);
+    const s = (Math.sqrt(3) * Math.abs(dt)) / this.lengthScale;
+    return (1 + s) * Math.exp(-s) * Math.pow(this.rho, Math.abs(a[1] - b[1]));
+  }
+
+  getParams() {
+    return { lengthScale: this.lengthScale, rho: this.rho, dilation: this.dilation };
+  }
+}
+
+/** Default calendar: the Quebec cycles (qc_cycles.json). */
+export const QC_CALENDAR = { changepoints: CHANGEPOINTS, campaigns: CAMPAIGNS };
+
+/** [day, regime, campaignDays] rows for the GPs, from ISO dates, on a
+ * calendar of changepoints and campaign windows. */
+export function toX(t0, dates, calendar = QC_CALENDAR) {
+  const cpDays = calendar.changepoints.map((d) => daysSince(t0, d));
+  const windows = calendar.campaigns.map(([a, b]) => [daysSince(t0, a), daysSince(t0, b)]);
+  return dates.map((d) => {
+    const day = daysSince(t0, d);
+    return [day, regimeOf(day, cpDays), campaignDaysOf(day, windows)];
+  });
+}
+
+/**
+ * Relative noise shape for `polls` (variance ~ 1/sqrt(n), the production
+ * convention), normalized so the quietest poll of `refPolls` carries 1 --
+ * refPolls defaults to polls itself; pass the TRAIN set to score held-out
+ * polls under the normalization the fit actually used.
+ */
+export function relativeNoiseShape(polls, refPolls = polls) {
+  const shape = (ps) => {
+    const w = sampleSizeWeight(ps);
+    const wMax = Math.max(...w);
+    return ps.map((_, i) => 1 / Math.max(w[i] / wMax, 0.05));
+  };
+  const refMin = Math.min(...shape(refPolls));
+  return shape(polls).map((v) => v / refMin);
+}
+
+/**
+ * @param {Array<object>} polls
+ * @param {string[]} partyCodes
+ * @param {Object} [opts]
+ * @param {number[]|null} [opts.noiseMultiplier] per-poll SD multiplier m_i
+ *   (e.g. a per-firm noise level): alpha is a variance, so it scales by m_i^2.
+ * @param {"sqrt"|"n"} [opts.noiseShape] shape of the relative noise across
+ *   sample sizes. "sqrt" (default, production) makes the variance ~ 1/sqrt(n);
+ *   "n" squares the relative shape to give the sampling-theory variance ~ 1/n.
+ * @returns {{gps: ml.GaussianProcessRegressor[], t0: string, partyCodes: string[]}}
+ */
+export function fitTrend(polls, partyCodes, { noiseMultiplier = null, noiseShape = "ilr", calendar = QC_CALENDAR } = {}) {
+  const comp = toClosedComposition(polls, partyCodes);
+  const ilrMat = ilr(comp); // k-1 orthonormal coordinates, full rank
+
+  const t0 = polls.reduce((min, p) => (p.pollDate < min ? p.pollDate : min), polls[0].pollDate);
+  const x = toX(t0, polls.map((p) => p.pollDate), calendar);
+
+  const w = sampleSizeWeight(polls);
+  const wMax = Math.max(...w);
+  const wNorm = w.map((v) => Math.max(v / wMax, 0.05));
+  const baseNoise = wNorm.map((v) => 1 / v);
+  const baseMin = Math.min(...baseNoise);
+  const relNoise = baseNoise.map((v) => v / baseMin); // relative shape: best poll = 1
+
+  // alpha is a per-observation VARIANCE. Production ("ilr", default) uses
+  // the PER-COORDINATE multinomial sampling variance (ilrSamplingVariance):
+  // a coordinate loaded on a rare part is noisy in log-ratio space no
+  // matter how large the poll. The earlier scalar shapes treated all
+  // coordinates alike, which let one n=5572 poll's "< 1 %" residual act as
+  // a precisely measured huge log-move and drag the PQ-CAQ nowcast by ~2.4
+  // points for a 0.5-vs-2.0 AUTRES entry. "sqrt" (variance ~ 1/sqrt(n)) and
+  // "n" (~ 1/n) are kept for comparison tools. Each shape is normalised to
+  // best-observation = 1 per coordinate; the fitted noiseScale absorbs
+  // units and overdispersion (house scatter) exactly as before. A per-poll
+  // SD multiplier enters squared.
+  let relVarC;
+  if (noiseShape === "ilr") {
+    const varC = ilrSamplingVariance(comp, polls.map((p) => p.sampleSize));
+    relVarC = varC.map((col) => {
+      const m = Math.min(...col);
+      return col.map((v) => v / m);
+    });
+  } else {
+    const relVar = noiseShape === "n" ? relNoise.map((v) => v * v) : relNoise;
+    relVarC = Array.from({ length: ilrMat[0].length }, () => relVar);
+  }
+  if (noiseMultiplier) {
+    relVarC = relVarC.map((col) => col.map((v, i) => v * noiseMultiplier[i] * noiseMultiplier[i]));
+  }
+
+  // The library's own optimizer (optimize: true) tunes kernel parameters by
+  // gradient ascent, but the noise SCALE multiplying the per-poll vector is
+  // not a kernel parameter, and the changepoint grid must compare marginal
+  // likelihoods across discrete rho values anyway -- so both stay on explicit
+  // grids over the heteroscedastic marginal likelihood.
+  // Both grids were extended after the first coverage check: the marginal
+  // likelihood kept choosing the boundary values, and a maximum on the edge
+  // of the grid means the grid is clipping the optimum, not finding it.
+  const LENGTH_SCALE_CANDIDATES = [10, 20, 30, 50, 75, 110, 160, 230, 330, 470, 680, 1000, 1500, 2200];
+  const NOISE_SCALE_CANDIDATES = [0.005, 0.01, 0.02, 0.05, 0.1, 0.25, 0.5, 1, 2, 4, 8];
+
+  const fitOne = (y, relVar, lengthScale, rho, dilation, noiseScale) => {
+    const gp = new ml.GaussianProcessRegressor({
+      kernel: new ChangepointKernel({ lengthScale, rho, dilation }),
+      normalizeY: true,
+    });
+    gp.fit(x, y, { alpha: relVar.map((v) => v * noiseScale) });
+    return gp;
+  };
+
+  const gps = [];
+  for (let coord = 0; coord < ilrMat[0].length; coord++) {
+    const y = ilrMat.map((row) => row[coord]);
+
+    // Stage 1: stationary grid (rho = 1, dilation = 1) over
+    // (lengthScale, noiseScale). Per noise scale, keep the best stationary
+    // marginal likelihood; noise scales within DELTA_NS of the winner stay
+    // in play for stage 2 (marginalising the noise scale too).
+    const nsBest = new Map();
+    for (const lengthScale of LENGTH_SCALE_CANDIDATES) {
+      for (const noiseScale of NOISE_SCALE_CANDIDATES) {
+        const gp = fitOne(y, relVarC[coord], lengthScale, 1, 1, noiseScale);
+        const cur = nsBest.get(noiseScale);
+        if (cur === undefined || gp.logMarginalLikelihood_ > cur) {
+          nsBest.set(noiseScale, gp.logMarginalLikelihood_);
+        }
+      }
+    }
+    const statMax = Math.max(...nsBest.values());
+    const DELTA_NS = 4;
+    const nsKept = [...nsBest.entries()].filter(([, l]) => l >= statMax - DELTA_NS).map(([ns]) => ns);
+
+    // Stage 2: JOINT grid over (lengthScale x rho x dilation), for every
+    // retained noise scale. Length scale and the non-stationarities
+    // interact, so the grid is joint; rho = 1 and dilation = 1 keep the
+    // stationary model on the table.
+    //
+    // The result is NOT the maximum: it is the LIKELIHOOD-WEIGHTED ENSEMBLE
+    // over the grid (approximate marginalisation of the hyperparameters,
+    // weights exp(lml - max)). The point maximum was fragile: several grid
+    // cells sit within a nat or two of each other, and a trivial data edit
+    // (0.5 pp on one poll's AUTRES) flipped the argmax and jumped the
+    // PQ-CAQ nowcast by ~2 points. Averaging makes the prediction a
+    // continuous function of the data and carries hyperparameter
+    // uncertainty into the intervals. Affordable at build time.
+    const candidates = [];
+    for (const noiseScale of nsKept) {
+      for (const lengthScale of LENGTH_SCALE_CANDIDATES) {
+        for (const rho of RHO_GRID) {
+          for (const dilation of DILATION_GRID) {
+            let gp;
+            try {
+              gp = fitOne(y, relVarC[coord], lengthScale, rho, dilation, noiseScale);
+            } catch {
+              continue;
+            }
+            candidates.push({ gp, lml: gp.logMarginalLikelihood_, params: { lengthScale, noiseScale, rho, dilation } });
+          }
+        }
+      }
+    }
+    gps.push(new GpEnsemble(candidates));
+  }
+
+  return { gps, t0, partyCodes, calendar };
+}
+
+/**
+ * Likelihood-weighted ensemble of GPs over the hyperparameter grid,
+ * exposing the single-GP predict() surface. Members below MIN_REL_WEIGHT of
+ * the total are dropped (they contribute nothing but compute time).
+ * Mixture moments: mean = sum w m_j; var = sum w (s_j^2 + m_j^2) - mean^2 --
+ * hyperparameter uncertainty therefore WIDENS the predictive interval where
+ * the grid disagrees, which is exactly the honesty the point-maximum lacked.
+ */
+const MIN_REL_WEIGHT = 1e-3;
+class GpEnsemble {
+  constructor(candidates) {
+    const lmax = Math.max(...candidates.map((c) => c.lml));
+    const raw = candidates.map((c) => ({ ...c, w: Math.exp(c.lml - lmax) }));
+    const wSum = raw.reduce((s, c) => s + c.w, 0);
+    this.members = raw
+      .filter((c) => c.w / wSum >= MIN_REL_WEIGHT)
+      .map((c) => ({ gp: c.gp, w: c.w, params: c.params }));
+    const w2 = this.members.reduce((s, c) => s + c.w, 0);
+    for (const m of this.members) m.w /= w2;
+    const top = this.members.reduce((a, b) => (b.w > a.w ? b : a));
+    this.chosenHyperparams = { ...top.params, ensembleSize: this.members.length, topWeight: +top.w.toFixed(3) };
+    this.logMarginalLikelihood_ = lmax;
+  }
+
+  predict(X, { returnStd = false } = {}) {
+    const n = X.length;
+    const mean = new Array(n).fill(0);
+    const m2 = new Array(n).fill(0);
+    for (const { gp, w } of this.members) {
+      const r = gp.predict(X, { returnStd });
+      const ms = returnStd ? r.mean : r;
+      for (let i = 0; i < n; i++) {
+        mean[i] += w * ms[i];
+        if (returnStd) m2[i] += w * (r.std[i] * r.std[i] + ms[i] * ms[i]);
+      }
+    }
+    if (!returnStd) return mean;
+    return { mean, std: mean.map((m, i) => Math.sqrt(Math.max(m2[i] - m * m, 1e-12))) };
+  }
+}
+
+function randnBoxMuller(rng) {
+  const u1 = rng(), u2 = rng();
+  return Math.sqrt(-2 * Math.log(u1 || 1e-10)) * Math.cos(2 * Math.PI * u2);
+}
+
+function mulberry32(seed) {
+  return function () {
+    let t = (seed += 0x6d2b79f5);
+    t = Math.imul(t ^ (t >>> 15), t | 1);
+    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+/** Lower-triangular Cholesky of a correlation-like matrix (jittered). */
+function cholLower(m) {
+  const n = m.length;
+  const L = Array.from({ length: n }, () => new Array(n).fill(0));
+  for (let i = 0; i < n; i++) {
+    for (let j = 0; j <= i; j++) {
+      let s = m[i][j];
+      for (let r = 0; r < j; r++) s -= L[i][r] * L[j][r];
+      L[i][j] = i === j ? Math.sqrt(Math.max(s, 1e-12)) : s / L[j][j];
+    }
+  }
+  return L;
+}
+
+/**
+ * Draw `nSamples` joint composition samples at `asOf`: one Normal draw per
+ * ILR coordinate from its own GP posterior, then inverse-ILR back to the
+ * simplex. All k-1 coordinates are sampled -- none is reconstructed from
+ * the others.
+ *
+ * `corr` (k-1 x k-1 correlation matrix, e.g. the empirical correlation of
+ * ILR poll residuals, shrunk toward identity) makes the per-coordinate draws
+ * CORRELATED instead of independent: the per-coordinate GPs cannot express
+ * cross-party co-movement, and independent ILR draws impose an isotropic
+ * joint covariance that the poll scatter visibly contradicts (when one
+ * party is under-polled the excess lands somewhere measurable). Marginals
+ * are unchanged by construction; only the joint distribution moves.
+ *
+ * NOTE: tested 2026-09-11 and left UNUSED in production -- injecting the
+ * empirical poll-residual correlation moved the share-space joint FARTHER
+ * from the observed scatter (poll noise correlation is not latent-trend
+ * correlation) and the seat impact stayed inside MC noise. The option stays
+ * because it is the natural hook the day a latent covariance is identifiable
+ * (multi-output GP); see tools/coord_covariance.mjs for the record.
+ */
+export function sampleTrendDraws(model, asOf, nSamples = 2000, seed = null, { corr = null } = {}) {
+  const x = toX(model.t0, [asOf], model.calendar);
+  const rng = seed !== null ? mulberry32(seed) : Math.random;
+
+  // Per-coordinate predictive: the FULL mixture over ensemble members, not
+  // its moment-matched Gaussian. Sampling a member first (probability w)
+  // and then from that member's Gaussian reproduces the exact mixture;
+  // collapsing to two moments kept the variance but erased the tail mass
+  // carried by low-weight reactive members (2026-10-06 review). A plain GP
+  // (no members) degrades to the single-Gaussian path.
+  const perCoord = model.gps.map((gp) => {
+    if (gp.members) {
+      const comps = gp.members.map(({ gp: m, w }) => {
+        const { mean, std } = m.predict(x, { returnStd: true });
+        return { w, m: mean[0], s: std[0] };
+      });
+      const { mean, std } = gp.predict(x, { returnStd: true });
+      return { comps, m: mean[0], s: std[0] };
+    }
+    const { mean, std } = gp.predict(x, { returnStd: true });
+    return { comps: null, m: mean[0], s: std[0] };
+  });
+
+  const pickComp = (pc) => {
+    if (!pc.comps) return pc;
+    let u = rng();
+    for (const c of pc.comps) { u -= c.w; if (u <= 0) return c; }
+    return pc.comps[pc.comps.length - 1];
+  };
+
+  const Lc = corr ? cholLower(corr) : null;
+  const samplesIlr = [];
+  for (let s = 0; s < nSamples; s++) {
+    const z = perCoord.map(() => randnBoxMuller(rng));
+    const chosen = perCoord.map(pickComp);
+    samplesIlr.push(
+      Lc
+        ? chosen.map((c, i) => {
+            let v = 0;
+            for (let j = 0; j <= i; j++) v += Lc[i][j] * z[j];
+            return c.m + c.s * v;
+          })
+        : chosen.map((c, i) => c.m + c.s * z[i])
+    );
+  }
+  const samplesSimplex = ilrInv(samplesIlr);
+  return samplesSimplex.map((row) => Object.fromEntries(model.partyCodes.map((p, i) => [p, row[i]])));
+}
+
+/**
+ * Same marginal summary as predictTrend, but for many dates at once via a
+ * single batched gp.predict() call per coordinate instead of one call per
+ * date -- calling predictTrend() in a per-date loop over a multi-year
+ * history means hundreds of separate {predict + 2000-sample MC} passes,
+ * slow enough in a browser to look like the chart never rendered at all.
+ *
+ * `mean` here is the deterministic inverse-ILR of the GP's own posterior
+ * mean at each date, NOT a Monte Carlo sample average: averaging even a few
+ * hundred *independent* samples per date leaves visible sampling noise from
+ * one date to the next, which shows up as the trend line jittering faster
+ * than the data could possibly support even though the underlying GP mean
+ * is smooth. Only the credible band (p05/p95) still needs sampling, since
+ * inverse-ILR is nonlinear.
+ */
+export function predictTrendSeries(model, dates, { nSamples = 300, seed = null } = {}) {
+  const rng = seed !== null ? mulberry32(seed) : Math.random;
+  const x = toX(model.t0, dates, model.calendar);
+
+  const meansByCoord = [], stdsByCoord = [];
+  for (const gp of model.gps) {
+    const { mean, std } = gp.predict(x, { returnStd: true });
+    meansByCoord.push(mean);
+    stdsByCoord.push(std);
+  }
+
+  const meanShareByDate = ilrInv(x.map((_, di) => meansByCoord.map((means) => means[di])));
+
+  return dates.map((date, di) => {
+    const samplesIlr = [];
+    for (let s = 0; s < nSamples; s++) {
+      samplesIlr.push(meansByCoord.map((means, ci) => means[di] + stdsByCoord[ci][di] * randnBoxMuller(rng)));
+    }
+    const samplesSimplex = ilrInv(samplesIlr);
+
+    const result = { date };
+    model.partyCodes.forEach((party, i) => {
+      const col = samplesSimplex.map((row) => row[i]).sort((a, b) => a - b);
+      const pct = (p) => col[Math.floor((p / 100) * (col.length - 1))];
+      result[party] = { mean: meanShareByDate[di][i], p05: pct(5), p50: pct(50), p95: pct(95) };
+    });
+    return result;
+  });
+}
+
+/**
+ * Point estimate + Monte Carlo credible interval per party at `asOf`
+ * (marginal summary of sampleTrendDraws -- inverse-ILR is nonlinear, so
+ * simplex-space quantiles come from samples rather than analytic
+ * propagation of the ILR-space Gaussian).
+ */
+export function predictTrend(model, asOf, { nSamples = 2000, seed = null } = {}) {
+  const x = toX(model.t0, [asOf], model.calendar);
+  const ilrMean = model.gps.map((gp) => gp.predict(x)[0]);
+  const meanShare = ilrInv([ilrMean])[0];
+
+  const draws = sampleTrendDraws(model, asOf, nSamples, seed);
+  const result = {};
+  model.partyCodes.forEach((party, i) => {
+    const col = draws.map((d) => d[party]).sort((a, b) => a - b);
+    const pct = (p) => col[Math.floor((p / 100) * (col.length - 1))];
+    result[party] = { mean: meanShare[i], p05: pct(5), p50: pct(50), p95: pct(95) };
+  });
+  return result;
+}

@@ -1,0 +1,726 @@
+{
+ "2014": {
+  "waves": [
+   {
+    "date": "2014-04-03",
+    "source": "Léger, « Sondage Politique provinciale, campagne électorale 2014, étude quantitative », 5 avril 2014, terrain 2-3 avril 2014, p. 5 et 7 (data/raw/non-lus/2014- étude quantitative.pdf). PCQ non listé (inclus dans Autres) : 0. Âge regroupé des tranches de 10 ans publiées (18-24 + 25-34, 35-44 + 45-54, 55-64 + 65+), moyenne pondérée par n.",
+    "groups": {
+     "total": {
+      "n": 1099,
+      "shares": {
+       "LIB": 38,
+       "PQ": 29,
+       "CAQ": 23,
+       "QS": 9,
+       "PCQ": 0,
+       "AUTRES": 2
+      }
+     },
+     "franco": {
+      "n": 894,
+      "shares": {
+       "LIB": 29,
+       "PQ": 35,
+       "CAQ": 27,
+       "QS": 9,
+       "PCQ": 0,
+       "AUTRES": 1
+      }
+     },
+     "nonfranco": {
+      "n": 205,
+      "shares": {
+       "LIB": 71,
+       "PQ": 7,
+       "CAQ": 11,
+       "QS": 8,
+       "PCQ": 0,
+       "AUTRES": 3
+      }
+     },
+     "a18_34": {
+      "n": 265,
+      "shares": {
+       "LIB": 34.5,
+       "PQ": 20.5,
+       "CAQ": 26.1,
+       "QS": 16.4,
+       "PCQ": 0,
+       "AUTRES": 1.5
+      }
+     },
+     "a35_54": {
+      "n": 405,
+      "shares": {
+       "LIB": 40,
+       "PQ": 28.6,
+       "CAQ": 23.6,
+       "QS": 7,
+       "PCQ": 0,
+       "AUTRES": 1.4
+      }
+     },
+     "a55p": {
+      "n": 429,
+      "shares": {
+       "LIB": 38.8,
+       "PQ": 34.1,
+       "CAQ": 20.6,
+       "QS": 5.5,
+       "PCQ": 0,
+       "AUTRES": 1.5
+      }
+     },
+     "rMTL": {
+      "n": 429,
+      "shares": {
+       "LIB": 39,
+       "PQ": 28,
+       "CAQ": 22,
+       "QS": 10,
+       "PCQ": 0,
+       "AUTRES": 2
+      }
+     },
+     "rQC": {
+      "n": 302,
+      "shares": {
+       "LIB": 35,
+       "PQ": 20,
+       "CAQ": 36,
+       "QS": 6,
+       "PCQ": 0,
+       "AUTRES": 2
+      }
+     },
+     "rREG": {
+      "n": 368,
+      "shares": {
+       "LIB": 37,
+       "PQ": 32,
+       "CAQ": 22,
+       "QS": 7,
+       "PCQ": 0,
+       "AUTRES": 2
+      }
+     }
+    }
+   }
+  ]
+ },
+ "2018": {
+  "waves": [
+   {
+    "date": "2018-09-27",
+    "source": "Léger, « La politique provinciale au Québec », 29 septembre 2018, terrain 24-27 septembre 2018, p. 4 (BAnQ, collections.banq.qc.ca/document/s/t/id3qyiXIO6D5gOcA6XRtqg ; copie data/raw/non-lus/leger_2018_banq/)",
+    "groups": {
+     "total": {
+      "n": 1338,
+      "shares": {
+       "CAQ": 32,
+       "LIB": 30,
+       "PQ": 19,
+       "QS": 17,
+       "PCQ": 1,
+       "AUTRES": 1
+      }
+     },
+     "franco": {
+      "n": 1057,
+      "shares": {
+       "CAQ": 37,
+       "LIB": 17,
+       "PQ": 24,
+       "QS": 20,
+       "PCQ": 1,
+       "AUTRES": 0
+      }
+     },
+     "nonfranco": {
+      "n": 279,
+      "shares": {
+       "CAQ": 14,
+       "LIB": 71,
+       "PQ": 4,
+       "QS": 7,
+       "PCQ": 2,
+       "AUTRES": 2
+      }
+     },
+     "a18_34": {
+      "n": 330,
+      "shares": {
+       "CAQ": 27,
+       "LIB": 22,
+       "PQ": 16,
+       "QS": 32,
+       "PCQ": 2,
+       "AUTRES": 1
+      }
+     },
+     "a35_54": {
+      "n": 505,
+      "shares": {
+       "CAQ": 34,
+       "LIB": 30,
+       "PQ": 21,
+       "QS": 13,
+       "PCQ": 1,
+       "AUTRES": 1
+      }
+     },
+     "a55p": {
+      "n": 503,
+      "shares": {
+       "CAQ": 33,
+       "LIB": 35,
+       "PQ": 21,
+       "QS": 11,
+       "PCQ": 1,
+       "AUTRES": 0
+      }
+     },
+     "rMTL": {
+      "n": 528,
+      "shares": {
+       "CAQ": 26,
+       "LIB": 38,
+       "PQ": 19,
+       "QS": 15,
+       "PCQ": 1,
+       "AUTRES": 1
+      }
+     },
+     "rQC": {
+      "n": 413,
+      "shares": {
+       "CAQ": 45,
+       "LIB": 18,
+       "PQ": 16,
+       "QS": 17,
+       "PCQ": 3,
+       "AUTRES": 1
+      }
+     },
+     "rREG": {
+      "n": 397,
+      "shares": {
+       "CAQ": 36,
+       "LIB": 23,
+       "PQ": 21,
+       "QS": 18,
+       "PCQ": 2,
+       "AUTRES": 1
+      }
+     }
+    }
+   }
+  ]
+ },
+ "2022": {
+  "waves": [
+   {
+    "date": "2022-09-25",
+    "source": "Léger, rapport post-débat, publié le 27 septembre 2022, p. 11 (leger360.com/wp-content/uploads/2024/02/20220927-Rapport-Intentions-de-vote-post-debat-Radio-Canada-Election-Quebec-2022.pdf ; copie data/raw/non-lus/leger_2022_final/)",
+    "groups": {
+     "total": {
+      "n": 910,
+      "shares": {
+       "CAQ": 37,
+       "QS": 17,
+       "LIB": 16,
+       "PQ": 15,
+       "PCQ": 15,
+       "AUTRES": 0
+      }
+     },
+     "franco": {
+      "n": 756,
+      "shares": {
+       "CAQ": 43,
+       "QS": 18,
+       "LIB": 7,
+       "PQ": 19,
+       "PCQ": 14,
+       "AUTRES": 0
+      }
+     },
+     "nonfranco": {
+      "n": 154,
+      "shares": {
+       "CAQ": 16,
+       "QS": 15,
+       "LIB": 46,
+       "PQ": 3,
+       "PCQ": 18,
+       "AUTRES": 2
+      }
+     },
+     "a18_34": {
+      "n": 300,
+      "shares": {
+       "CAQ": 18,
+       "QS": 39,
+       "LIB": 15,
+       "PQ": 13,
+       "PCQ": 15,
+       "AUTRES": 1
+      }
+     },
+     "a35_54": {
+      "n": 304,
+      "shares": {
+       "CAQ": 33,
+       "QS": 18,
+       "LIB": 12,
+       "PQ": 14,
+       "PCQ": 23,
+       "AUTRES": 1
+      }
+     },
+     "a55p": {
+      "n": 306,
+      "shares": {
+       "CAQ": 49,
+       "QS": 4,
+       "LIB": 19,
+       "PQ": 18,
+       "PCQ": 9,
+       "AUTRES": 0
+      }
+     },
+     "rMTL": {
+      "n": 354,
+      "shares": {
+       "CAQ": 32,
+       "QS": 16,
+       "LIB": 23,
+       "PQ": 14,
+       "PCQ": 13,
+       "AUTRES": 1
+      }
+     },
+     "rQC": {
+      "n": 281,
+      "shares": {
+       "CAQ": 38,
+       "QS": 15,
+       "LIB": 9,
+       "PQ": 13,
+       "PCQ": 24,
+       "AUTRES": 0
+      }
+     },
+     "rREG": {
+      "n": 275,
+      "shares": {
+       "CAQ": 42,
+       "QS": 18,
+       "LIB": 9,
+       "PQ": 17,
+       "PCQ": 14,
+       "AUTRES": 0
+      }
+     }
+    }
+   },
+   {
+    "date": "2022-09-30",
+    "source": "Léger, rapport de fin de campagne, 2 octobre 2022, terrain 28-30 septembre 2022, p. 10 (leger360.com/wp-content/uploads/2024/02/20221002-Rapport-fin-de-campagne-Election-Quebec-2022.pdf ; copie data/raw/non-lus/leger_2022_final/)",
+    "groups": {
+     "total": {
+      "n": 950,
+      "shares": {
+       "CAQ": 38,
+       "LIB": 17,
+       "QS": 15,
+       "PQ": 15,
+       "PCQ": 14,
+       "AUTRES": 1
+      }
+     },
+     "franco": {
+      "n": 778,
+      "shares": {
+       "CAQ": 44,
+       "LIB": 6,
+       "QS": 17,
+       "PQ": 19,
+       "PCQ": 14,
+       "AUTRES": 0
+      }
+     },
+     "nonfranco": {
+      "n": 172,
+      "shares": {
+       "CAQ": 21,
+       "LIB": 48,
+       "QS": 10,
+       "PQ": 2,
+       "PCQ": 13,
+       "AUTRES": 5
+      }
+     },
+     "a18_34": {
+      "n": 241,
+      "shares": {
+       "CAQ": 25,
+       "LIB": 13,
+       "QS": 35,
+       "PQ": 11,
+       "PCQ": 15,
+       "AUTRES": 1
+      }
+     },
+     "a35_54": {
+      "n": 300,
+      "shares": {
+       "CAQ": 36,
+       "LIB": 17,
+       "QS": 10,
+       "PQ": 12,
+       "PCQ": 23,
+       "AUTRES": 2
+      }
+     },
+     "a55p": {
+      "n": 409,
+      "shares": {
+       "CAQ": 48,
+       "LIB": 19,
+       "QS": 7,
+       "PQ": 19,
+       "PCQ": 7,
+       "AUTRES": 2
+      }
+     },
+     "rMTL": {
+      "n": 361,
+      "shares": {
+       "CAQ": 34,
+       "LIB": 26,
+       "QS": 16,
+       "PQ": 12,
+       "PCQ": 10,
+       "AUTRES": 2
+      }
+     },
+     "rQC": {
+      "n": 294,
+      "shares": {
+       "CAQ": 37,
+       "LIB": 4,
+       "QS": 20,
+       "PQ": 19,
+       "PCQ": 20,
+       "AUTRES": 0
+      }
+     },
+     "rREG": {
+      "n": 295,
+      "shares": {
+       "CAQ": 43,
+       "LIB": 9,
+       "QS": 12,
+       "PQ": 17,
+       "PCQ": 17,
+       "AUTRES": 1
+      }
+     }
+    }
+   }
+  ]
+ },
+ "2026": {
+  "waves": [
+   {
+    "date": "2026-09-27",
+    "source": "Léger, rapport d'intentions de vote, vague du 27 septembre 2026, p. 7 (data/raw/lus/2026-09-26-leger.pdf)",
+    "groups": {
+     "total": {
+      "n": 873,
+      "shares": {
+       "PQ": 30,
+       "LIB": 26,
+       "PCQ": 18,
+       "CAQ": 16,
+       "QS": 9,
+       "AUTRES": 1
+      }
+     },
+     "franco": {
+      "n": 729,
+      "shares": {
+       "PQ": 37,
+       "LIB": 14,
+       "PCQ": 19,
+       "CAQ": 18,
+       "QS": 10,
+       "AUTRES": 1
+      }
+     },
+     "nonfranco": {
+      "n": 144,
+      "shares": {
+       "PQ": 7,
+       "LIB": 63,
+       "PCQ": 12,
+       "CAQ": 10,
+       "QS": 8,
+       "AUTRES": 0
+      }
+     },
+     "a18_34": {
+      "n": 236,
+      "shares": {
+       "PQ": 22,
+       "LIB": 27,
+       "PCQ": 22,
+       "CAQ": 8,
+       "QS": 21,
+       "AUTRES": 0
+      }
+     },
+     "a35_54": {
+      "n": 266,
+      "shares": {
+       "PQ": 36,
+       "LIB": 23,
+       "PCQ": 24,
+       "CAQ": 6,
+       "QS": 9,
+       "AUTRES": 1
+      }
+     },
+     "a55p": {
+      "n": 371,
+      "shares": {
+       "PQ": 30,
+       "LIB": 29,
+       "PCQ": 11,
+       "CAQ": 27,
+       "QS": 3,
+       "AUTRES": 1
+      }
+     },
+     "rMTL": {
+      "n": 350,
+      "shares": {
+       "PQ": 27,
+       "LIB": 36,
+       "PCQ": 9,
+       "CAQ": 17,
+       "QS": 10,
+       "AUTRES": 1
+      }
+     },
+     "rQC": {
+      "n": 273,
+      "shares": {
+       "PQ": 29,
+       "LIB": 15,
+       "PCQ": 31,
+       "CAQ": 15,
+       "QS": 10,
+       "AUTRES": 1
+      }
+     },
+     "rREG": {
+      "n": 250,
+      "shares": {
+       "PQ": 34,
+       "LIB": 17,
+       "PCQ": 25,
+       "CAQ": 15,
+       "QS": 8,
+       "AUTRES": 1
+      }
+     }
+    }
+   },
+   {
+    "date": "2026-10-03",
+    "source": "Léger, « Rapport intentions de vote - 3 octobre 2026 », p. 7 (data/raw/lus/)",
+    "groups": {
+     "total": {
+      "n": 892,
+      "shares": {
+       "PQ": 29,
+       "LIB": 25,
+       "PCQ": 20,
+       "CAQ": 14,
+       "QS": 11,
+       "AUTRES": 1
+      }
+     },
+     "franco": {
+      "n": 702,
+      "shares": {
+       "PQ": 35,
+       "LIB": 15,
+       "PCQ": 19,
+       "CAQ": 15,
+       "QS": 14,
+       "AUTRES": 2
+      }
+     },
+     "nonfranco": {
+      "n": 190,
+      "shares": {
+       "PQ": 9,
+       "LIB": 56,
+       "PCQ": 20,
+       "CAQ": 9,
+       "QS": 5,
+       "AUTRES": 1
+      }
+     },
+     "a18_34": {
+      "n": 207,
+      "shares": {
+       "PQ": 27,
+       "LIB": 24,
+       "PCQ": 21,
+       "CAQ": 3,
+       "QS": 26,
+       "AUTRES": 0
+      }
+     },
+     "a35_54": {
+      "n": 282,
+      "shares": {
+       "PQ": 30,
+       "LIB": 23,
+       "PCQ": 26,
+       "CAQ": 7,
+       "QS": 11,
+       "AUTRES": 3
+      }
+     },
+     "a55p": {
+      "n": 403,
+      "shares": {
+       "PQ": 29,
+       "LIB": 27,
+       "PCQ": 15,
+       "CAQ": 23,
+       "QS": 4,
+       "AUTRES": 1
+      }
+     },
+     "rMTL": {
+      "n": 373,
+      "shares": {
+       "PQ": 26,
+       "LIB": 34,
+       "PCQ": 14,
+       "CAQ": 10,
+       "QS": 14,
+       "AUTRES": 2
+      }
+     },
+     "rQC": {
+      "n": 256,
+      "shares": {
+       "PQ": 28,
+       "LIB": 18,
+       "PCQ": 37,
+       "CAQ": 8,
+       "QS": 8,
+       "AUTRES": 0
+      }
+     },
+     "rREG": {
+      "n": 263,
+      "shares": {
+       "PQ": 33,
+       "LIB": 16,
+       "PCQ": 22,
+       "CAQ": 19,
+       "QS": 8,
+       "AUTRES": 1
+      }
+     }
+    }
+   }
+  ]
+ },
+ "note": "Intentions de vote des électeurs décidés, ventilées par langue maternelle et par âge, vagues Léger de fin de campagne (les deux dernières quand elles sont archivées). Parts en %. AUTRES = somme des autres partis. Transcrit des tableaux publiés, vérifié visuellement. Le test regroupe les vagues d'une même élection en moyenne pondérée par n. Colonnes régionales (rMTL = RMR de Montréal, rQC = RMR de Québec, rREG = reste du Québec) transcrites des mêmes tableaux.",
+ "extra2026": {
+  "note": "Vague antérieure, hors fenêtre de fin de campagne, conservée pour analyse.",
+  "waves": [
+   {
+    "date": "2026-09-21",
+    "source": "Léger, « Rapport intentions de vote - 21 septembre 2026 », p. 7 (data/raw/lus/)",
+    "groups": {
+     "total": {
+      "n": 903,
+      "shares": {
+       "PQ": 29,
+       "LIB": 23,
+       "CAQ": 20,
+       "PCQ": 17,
+       "QS": 10,
+       "AUTRES": 1
+      }
+     },
+     "franco": {
+      "n": 784,
+      "shares": {
+       "PQ": 37,
+       "LIB": 11,
+       "CAQ": 24,
+       "PCQ": 18,
+       "QS": 9,
+       "AUTRES": 1
+      }
+     },
+     "nonfranco": {
+      "n": 119,
+      "shares": {
+       "PQ": 6,
+       "LIB": 60,
+       "CAQ": 7,
+       "PCQ": 15,
+       "QS": 11,
+       "AUTRES": 2
+      }
+     },
+     "a18_34": {
+      "n": 170,
+      "shares": {
+       "PQ": 21,
+       "LIB": 26,
+       "CAQ": 13,
+       "PCQ": 18,
+       "QS": 21,
+       "AUTRES": 0
+      }
+     },
+     "a35_54": {
+      "n": 256,
+      "shares": {
+       "PQ": 32,
+       "LIB": 25,
+       "CAQ": 11,
+       "PCQ": 21,
+       "QS": 11,
+       "AUTRES": 1
+      }
+     },
+     "a55p": {
+      "n": 477,
+      "shares": {
+       "PQ": 32,
+       "LIB": 21,
+       "CAQ": 30,
+       "PCQ": 13,
+       "QS": 3,
+       "AUTRES": 2
+      }
+     }
+    }
+   }
+  ]
+ }
+}

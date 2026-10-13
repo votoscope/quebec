@@ -1,0 +1,69 @@
+{
+ "note": "Coefficients estimés conjointement sur les transitions 2014->2018, 2018->2022 et 2022->2026, à vote provincial connu (moindres carrés des parts, grille 0 à 1,5 par pas de 0,25 ; tools/regional_decay_test.mjs) : kappa = swing par langue maternelle (ventilations Léger), kappaRegion = ajustement par les ventilations régionales des sondages (toutes firmes), agrégées avec regionDecay. 0 = aucun ajustement.",
+ "kappa": 0.25,
+ "estimatedOn": [
+  "2014->2018",
+  "2018->2022",
+  "2022->2026"
+ ],
+ "grid": [
+  0,
+  0.25,
+  0.5,
+  0.75,
+  1,
+  1.25,
+  1.5,
+  1.75,
+  2,
+  2.5,
+  3
+ ],
+ "validation": [
+  {
+   "transition": "2014->2018",
+   "kChoisiSurLesAutres": 1.25,
+   "rmseReportPur": 5.509,
+   "rmseLangue": 5.385
+  },
+  {
+   "transition": "2018->2022",
+   "kChoisiSurLesAutres": 1,
+   "rmseReportPur": 7.432,
+   "rmseLangue": 7.141
+  },
+  {
+   "transition": "2022->2026",
+   "kChoisiSurLesAutres": 1,
+   "rmseReportPur": 5.226,
+   "rmseLangue": 4.828
+  }
+ ],
+ "kappaRegion": 0.75,
+ "validationRegion": {
+  "protocole": "(kappa, kappaRegion) choisis sur deux transitions, évalués sur la troisième ; tendance nationale de veille",
+  "choisiSansT1": {
+   "L": 0.5,
+   "R": 1
+  },
+  "choisiSansT2": {
+   "L": 0.25,
+   "R": 0.5
+  },
+  "choisiSansT3": {
+   "L": 0.25,
+   "R": 0.75
+  },
+  "rmseParts": 5.443,
+  "rmseFenetre14j": 5.538,
+  "siegesVoteConnu": 18,
+  "siegesVeille": 30,
+  "siegesVeilleFenetre14j": 28
+ },
+ "regionDecay": {
+  "tau": 240,
+  "dilation": 16,
+  "mPrior": 1000,
+  "note": "Poids d un sondage : n * exp(-âge / tau), âge = jours écoulés + (dilation - 1) * jours de campagne écoulés. Estimés par prévision un pas en avant de l écart région - province de chaque sondage à partir des sondages antérieurs du même cycle (152 sondages ventilés en trois régions, 2018-2026), grilles tau {3,...,1920, infini} et dilation {1,...,64} : perte 0,163 contre 0,216 pour une fenêtre fixe de 14 jours et 0,262 sans sondage régional. mPrior : pseudo-effectif de l écart de l élection précédente dans cette prévision (non utilisé en production, où kappaRegion joue ce rôle)."
+ }
+}

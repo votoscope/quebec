@@ -1,0 +1,20 @@
+{
+ "note": "Facteurs d'échelle par parti (CLR) appliqués au bassin de résidus de la simulation ; 1 = bassin tel quel. Estimés hors échantillon : les erreurs de chaque transition du bassin prédisent les autres, log-score des gagnants à vote provincial connu (tools/residual_scale_fit.mjs).",
+ "estimatedOn": [
+  "T1",
+  "T2"
+ ],
+ "kappa": 0.5,
+ "scale": {
+  "CAQ": 0.75,
+  "LIB": 0.5,
+  "PCQ": 0.5,
+  "PQ": 1.25,
+  "QS": 1.25,
+  "AUTRES": 1
+ },
+ "logScore": 0.5534456963941341,
+ "logScoreUnscaled": 0.5909079159229405,
+ "clip": 0.75,
+ "clipNote": "Écrêtage des résidus après mise à l échelle, en écarts-types par partie (CLR) ; choisi hors échantillon à la veille des trois scrutins (tools/winsor_test.mjs) : 0,75 retenu dans chaque pli."
+}

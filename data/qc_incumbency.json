@@ -1,0 +1,1073 @@
+{
+ "T1": {
+  "Abitibi-Est": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "Acadie": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "Anjou-Louis-Riel": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "Bellechasse": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "Berthier": {
+   "party": "PQ",
+   "sameParty": true,
+   "previousParty": "PQ"
+  },
+  "Blainville": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Bonaventure": {
+   "party": "PQ",
+   "sameParty": true,
+   "previousParty": "PQ"
+  },
+  "Borduas": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Bourget": {
+   "party": "PQ",
+   "sameParty": true,
+   "previousParty": "PQ"
+  },
+  "Chambly": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Champlain": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "Chapleau": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "Charlesbourg": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "Charlevoix-Côte-de-Beaupré": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "Châteauguay": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "Chomedey": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "Chutes-de-la-Chaudière": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Maurice-Richard": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "D'Arcy-McGee": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "Deux-Montagnes": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Drummond-Bois-Francs": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Dubuc": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "Duplessis": {
+   "party": "PQ",
+   "sameParty": true,
+   "previousParty": "PQ"
+  },
+  "Granby": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Hochelaga-Maisonneuve": {
+   "party": "PQ",
+   "sameParty": true,
+   "previousParty": "PQ"
+  },
+  "Hull": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "Huntingdon": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "Iberville": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Jeanne-Mance-Viger": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "Johnson": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Joliette": {
+   "party": "PQ",
+   "sameParty": true,
+   "previousParty": "PQ"
+  },
+  "Jonquière": {
+   "party": "PQ",
+   "sameParty": true,
+   "previousParty": "PQ"
+  },
+  "L'Assomption": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "La Peltrie": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "La Pinière": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "La Prairie": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Labelle": {
+   "party": "PQ",
+   "sameParty": true,
+   "previousParty": "PQ"
+  },
+  "LaFontaine": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "Laporte": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "Laval-des-Rapides": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "Maskinongé": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "Masson": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Matane-Matapédia": {
+   "party": "PQ",
+   "sameParty": true,
+   "previousParty": "PQ"
+  },
+  "Mille-Îles": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "Mirabel": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Mont-Royal-Outremont": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "Montarville": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Nicolet-Bécancour": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Notre-Dame-de-Grâce": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "Marguerite-Bourgeoys": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "Papineau": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "Pontiac": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "Repentigny": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Rimouski": {
+   "party": "PQ",
+   "sameParty": true,
+   "previousParty": "PQ"
+  },
+  "Rivière-du-Loup-Témiscouata": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "Robert-Baldwin": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "Roberval": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "Rosemont": {
+   "party": "PQ",
+   "sameParty": true,
+   "previousParty": "PQ"
+  },
+  "Rousseau": {
+   "party": "PQ",
+   "sameParty": true,
+   "previousParty": "PQ"
+  },
+  "Rouyn-Noranda-Témiscamingue": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "Prévost": {
+   "party": "CAQ",
+   "sameParty": false,
+   "previousParty": "LIB"
+  },
+  "Saint-Hyacinthe": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Saint-Jean": {
+   "party": "PQ",
+   "sameParty": true,
+   "previousParty": "PQ"
+  },
+  "Laviolette-Saint-Maurice": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "Sainte-Marie-Saint-Jacques": {
+   "party": "QS",
+   "sameParty": true,
+   "previousParty": "QS"
+  },
+  "Sainte-Rose": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "Sanguinet": {
+   "party": "PQ",
+   "sameParty": true,
+   "previousParty": "PQ"
+  },
+  "Sherbrooke": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "Soulanges": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "Taillon": {
+   "party": "PQ",
+   "sameParty": true,
+   "previousParty": "PQ"
+  },
+  "Terrebonne": {
+   "party": "PQ",
+   "sameParty": true,
+   "previousParty": "PQ"
+  },
+  "Trois-Rivières": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "Ungava": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "Vanier-Les Rivières": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "Vaudreuil": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "Verchères": {
+   "party": "PQ",
+   "sameParty": true,
+   "previousParty": "PQ"
+  }
+ },
+ "T2": {
+  "Abitibi-Est": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Abitibi-Ouest": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Argenteuil": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Arthabaska": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Beauce-Nord": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Beauce-Sud": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Beauharnois": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Bellechasse": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Berthier": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Blainville": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Borduas": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Brome-Missisquoi": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Chambly": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Champlain": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Chapleau": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Charlesbourg": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Chauveau": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Chicoutimi": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Deux-Montagnes": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Dubuc": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Gaspé": {
+   "party": "PQ",
+   "sameParty": true,
+   "previousParty": "PQ"
+  },
+  "Gatineau": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Gouin": {
+   "party": "QS",
+   "sameParty": true,
+   "previousParty": "QS"
+  },
+  "Granby": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Hochelaga-Maisonneuve": {
+   "party": "QS",
+   "sameParty": true,
+   "previousParty": "QS"
+  },
+  "Hull": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "Îles-de-la-Madeleine": {
+   "party": "PQ",
+   "sameParty": true,
+   "previousParty": "PQ"
+  },
+  "Jacques-Cartier": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "Jean-Lesage": {
+   "party": "QS",
+   "sameParty": true,
+   "previousParty": "QS"
+  },
+  "Johnson": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Labelle": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Lac-Saint-Jean": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "LaFontaine": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "La Peltrie": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "La Prairie": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "L'Assomption": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Laurier-Dorion": {
+   "party": "QS",
+   "sameParty": true,
+   "previousParty": "QS"
+  },
+  "Laval-des-Rapides": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "Les Plaines": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Lotbinière-Frontenac": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Louis-Hébert": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Marquette": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "Maskinongé": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Masson": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Mégantic": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Mercier": {
+   "party": "QS",
+   "sameParty": true,
+   "previousParty": "QS"
+  },
+  "Mirabel": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Montarville": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Montmorency": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Nelligan": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "Nicolet-Bécancour": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Orford": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Papineau": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Pointe-aux-Trembles": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Pontiac": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "Portneuf": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Richelieu": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Richmond": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Rosemont": {
+   "party": "QS",
+   "sameParty": true,
+   "previousParty": "QS"
+  },
+  "Rousseau": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Sainte-Rose": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Saint-François": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Saint-Hyacinthe": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Saint-Jean": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Saint-Jérôme": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Saint-Laurent": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "Sherbrooke": {
+   "party": "QS",
+   "sameParty": true,
+   "previousParty": "QS"
+  },
+  "Soulanges": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Taillon": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Terrebonne": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Trois-Rivières": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Vachon": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Vanier-Les Rivières": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "Vaudreuil": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  }
+ },
+ "T3": {
+  "117": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "119": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "151": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "161": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "179": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "181": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "191": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "201": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "207": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "211": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "219": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "227": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "237": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "241": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "247": {
+   "party": "QS",
+   "sameParty": true,
+   "previousParty": "QS"
+  },
+  "257": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "259": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "261": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "267": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "277": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "279": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "307": {
+   "party": "QS",
+   "sameParty": true,
+   "previousParty": "QS"
+  },
+  "313": {
+   "party": "QS",
+   "sameParty": true,
+   "previousParty": "QS"
+  },
+  "317": {
+   "party": "QS",
+   "sameParty": true,
+   "previousParty": "QS"
+  },
+  "321": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "327": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "337": {
+   "party": "PQ",
+   "sameParty": true,
+   "previousParty": "PQ"
+  },
+  "339": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "341": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "351": {
+   "party": "AUTRES",
+   "sameParty": false,
+   "previousParty": "LIB"
+  },
+  "359": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "569": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "571": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "577": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "607": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "617": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "631": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "637": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "641": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "651": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "657": {
+   "party": "LIB",
+   "sameParty": true,
+   "previousParty": "LIB"
+  },
+  "667": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "681": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "689": {
+   "party": "LIB",
+   "sameParty": false,
+   "previousParty": "CAQ"
+  },
+  "691": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "693": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "727": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "729": {
+   "party": "PCQ",
+   "sameParty": false,
+   "previousParty": "CAQ"
+  },
+  "751": {
+   "party": "QS",
+   "sameParty": true,
+   "previousParty": "QS"
+  },
+  "757": {
+   "party": "QS",
+   "sameParty": true,
+   "previousParty": "QS"
+  },
+  "761": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "777": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "789": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "791": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "797": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "799": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "807": {
+   "party": "PQ",
+   "sameParty": true,
+   "previousParty": "PQ"
+  },
+  "809": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "811": {
+   "party": "PQ",
+   "sameParty": true,
+   "previousParty": "PQ"
+  },
+  "813": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "817": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "823": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  },
+  "837": {
+   "party": "CAQ",
+   "sameParty": true,
+   "previousParty": "CAQ"
+  }
+ }
+}

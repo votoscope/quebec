@@ -1,0 +1,78 @@
+{
+  "cycle": 2026,
+  "electionDate": "2026-10-05",
+  "previousElectionDate": "2022-10-03",
+  "changepoints": [
+    "2026-01-14",
+    "2026-04-12"
+  ],
+  "campaigns": [
+    [
+      "2014-03-05",
+      "2014-04-07"
+    ],
+    [
+      "2018-08-23",
+      "2018-10-01"
+    ],
+    [
+      "2022-08-28",
+      "2022-10-03"
+    ],
+    [
+      "2026-08-26",
+      "2026-10-05"
+    ]
+  ],
+  "cycleBoundaries": [
+    [
+      "2018-10-01",
+      2018
+    ],
+    [
+      "2022-10-03",
+      2022
+    ]
+  ],
+  "leadersPrevious": [
+    {
+      "party": "CAQ",
+      "riding": "L'Assomption"
+    },
+    {
+      "party": "LIB",
+      "riding": "Saint-Henri-Sainte-Anne"
+    },
+    {
+      "party": "QS",
+      "riding": "Gouin"
+    },
+    {
+      "party": "PQ",
+      "riding": "Camille-Laurin"
+    },
+    {
+      "party": "PCQ",
+      "riding": "Chauveau"
+    }
+  ],
+  "byelectionBounds": {
+    "after": "2022-10-03",
+    "before": "2026-10-05"
+  },
+  "residualTransitions": [
+    [
+      "2014-04-07",
+      "2011",
+      "2018-10-01",
+      "2017"
+    ],
+    [
+      "2018-10-01",
+      "2017",
+      "2022-10-03",
+      "2017"
+    ]
+  ],
+  "notes": "Constantes de cycle centralisées (RUNBOOK §4). À synchroniser UNE SEULE FOIS ici pour le prochain cycle. Les six endroits consommateurs : computeProjection.js (ELECTION_DATE, LEADERS_PREVIOUS), gpTrend.js (CHANGEPOINTS, CAMPAIGNS), watch.ts (CYCLE_BOUNDARIES), export_json.ts (byelectionBounds), loaders candidats/chefs, baseline."
+}

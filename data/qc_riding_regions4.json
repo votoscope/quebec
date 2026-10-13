@@ -1,0 +1,772 @@
+{
+  "regions": [
+    {
+      "riding_code": "211",
+      "region3": "MTL",
+      "region4": "CRO",
+      "riding_name": "Vachon"
+    },
+    {
+      "riding_code": "797",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Bellechasse"
+    },
+    {
+      "riding_code": "817",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "René-Lévesque"
+    },
+    {
+      "riding_code": "131",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Daniel-Johnson"
+    },
+    {
+      "riding_code": "833",
+      "region3": "MTL",
+      "region4": "ILE",
+      "riding_name": "Anjou–Louis-Riel"
+    },
+    {
+      "riding_code": "569",
+      "region3": "MTL",
+      "region4": "CRO",
+      "riding_name": "Vimont-Auteuil"
+    },
+    {
+      "riding_code": "319",
+      "region3": "MTL",
+      "region4": "ILE",
+      "riding_name": "Rosemont"
+    },
+    {
+      "riding_code": "359",
+      "region3": "MTL",
+      "region4": "CRO",
+      "riding_name": "Sainte-Rose"
+    },
+    {
+      "riding_code": "157",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Brome-Missisquoi"
+    },
+    {
+      "riding_code": "207",
+      "region3": "MTL",
+      "region4": "CRO",
+      "riding_name": "Chambly"
+    },
+    {
+      "riding_code": "807",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Matane-Matapédia-Mitis"
+    },
+    {
+      "riding_code": "201",
+      "region3": "MTL",
+      "region4": "CRO",
+      "riding_name": "La Pinière"
+    },
+    {
+      "riding_code": "281",
+      "region3": "MTL",
+      "region4": "ILE",
+      "riding_name": "Saint-Henri–Sainte-Anne"
+    },
+    {
+      "riding_code": "271",
+      "region3": "MTL",
+      "region4": "ILE",
+      "riding_name": "Saint-Laurent"
+    },
+    {
+      "riding_code": "239",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Saint-Hyacinthe"
+    },
+    {
+      "riding_code": "757",
+      "region3": "QC",
+      "region4": "QC",
+      "riding_name": "Jean-Lesage"
+    },
+    {
+      "riding_code": "727",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Portneuf"
+    },
+    {
+      "riding_code": "781",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Beauce-Nord"
+    },
+    {
+      "riding_code": "823",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Jonquière"
+    },
+    {
+      "riding_code": "167",
+      "region3": "MTL",
+      "region4": "CRO",
+      "riding_name": "Saint-Jean"
+    },
+    {
+      "riding_code": "237",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Borduas"
+    },
+    {
+      "riding_code": "247",
+      "region3": "MTL",
+      "region4": "ILE",
+      "riding_name": "Verdun"
+    },
+    {
+      "riding_code": "277",
+      "region3": "MTL",
+      "region4": "ILE",
+      "riding_name": "D'Arcy-McGee"
+    },
+    {
+      "riding_code": "799",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Côte-du-Sud"
+    },
+    {
+      "riding_code": "707",
+      "region3": "QC",
+      "region4": "QC",
+      "riding_name": "Jean-Talon"
+    },
+    {
+      "riding_code": "771",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Charlevoix–Côte-de-Beaupré"
+    },
+    {
+      "riding_code": "787",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Lotbinière-Frontenac"
+    },
+    {
+      "riding_code": "811",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Îles-de-la-Madeleine"
+    },
+    {
+      "riding_code": "821",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Chicoutimi"
+    },
+    {
+      "riding_code": "577",
+      "region3": "MTL",
+      "region4": "CRO",
+      "riding_name": "Groulx"
+    },
+    {
+      "riding_code": "141",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Drummond–Bois-Francs"
+    },
+    {
+      "riding_code": "651",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Hull"
+    },
+    {
+      "riding_code": "789",
+      "region3": "QC",
+      "region4": "QC",
+      "riding_name": "Chutes-de-la-Chaudière"
+    },
+    {
+      "riding_code": "351",
+      "region3": "MTL",
+      "region4": "CRO",
+      "riding_name": "Chomedey"
+    },
+    {
+      "riding_code": "199",
+      "region3": "MTL",
+      "region4": "CRO",
+      "riding_name": "La Prairie"
+    },
+    {
+      "riding_code": "219",
+      "region3": "MTL",
+      "region4": "CRO",
+      "riding_name": "Marie-Victorin"
+    },
+    {
+      "riding_code": "801",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Rivière-du-Loup–Témiscouata–Les Basques"
+    },
+    {
+      "riding_code": "831",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Ungava"
+    },
+    {
+      "riding_code": "827",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Lac-Saint-Jean"
+    },
+    {
+      "riding_code": "321",
+      "region3": "MTL",
+      "region4": "ILE",
+      "riding_name": "Viau"
+    },
+    {
+      "riding_code": "611",
+      "region3": "MTL",
+      "region4": "CRO",
+      "riding_name": "Masson"
+    },
+    {
+      "riding_code": "769",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Chauveau"
+    },
+    {
+      "riding_code": "151",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Nicolet-Bécancour"
+    },
+    {
+      "riding_code": "279",
+      "region3": "MTL",
+      "region4": "ILE",
+      "riding_name": "Notre-Dame-de-Grâce"
+    },
+    {
+      "riding_code": "749",
+      "region3": "QC",
+      "region4": "QC",
+      "riding_name": "Vanier-Les Rivières"
+    },
+    {
+      "riding_code": "701",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Champlain"
+    },
+    {
+      "riding_code": "631",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Rousseau"
+    },
+    {
+      "riding_code": "671",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Rouyn-Noranda–Témiscamingue"
+    },
+    {
+      "riding_code": "127",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Orford"
+    },
+    {
+      "riding_code": "597",
+      "region3": "MTL",
+      "region4": "CRO",
+      "riding_name": "Saint-Jérôme"
+    },
+    {
+      "riding_code": "161",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Iberville"
+    },
+    {
+      "riding_code": "607",
+      "region3": "MTL",
+      "region4": "CRO",
+      "riding_name": "Blainville"
+    },
+    {
+      "riding_code": "187",
+      "region3": "MTL",
+      "region4": "CRO",
+      "riding_name": "Vaudreuil"
+    },
+    {
+      "riding_code": "197",
+      "region3": "MTL",
+      "region4": "CRO",
+      "riding_name": "Sanguinet"
+    },
+    {
+      "riding_code": "339",
+      "region3": "MTL",
+      "region4": "ILE",
+      "riding_name": "LaFontaine"
+    },
+    {
+      "riding_code": "601",
+      "region3": "MTL",
+      "region4": "CRO",
+      "riding_name": "Les Plaines"
+    },
+    {
+      "riding_code": "227",
+      "region3": "MTL",
+      "region4": "CRO",
+      "riding_name": "Montarville"
+    },
+    {
+      "riding_code": "267",
+      "region3": "MTL",
+      "region4": "ILE",
+      "riding_name": "Robert-Baldwin"
+    },
+    {
+      "riding_code": "777",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Beauce-Sud"
+    },
+    {
+      "riding_code": "813",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Duplessis"
+    },
+    {
+      "riding_code": "617",
+      "region3": "MTL",
+      "region4": "CRO",
+      "riding_name": "Repentigny"
+    },
+    {
+      "riding_code": "137",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Richmond"
+    },
+    {
+      "riding_code": "337",
+      "region3": "MTL",
+      "region4": "ILE",
+      "riding_name": "Camille-Laurin"
+    },
+    {
+      "riding_code": "179",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Beauharnois"
+    },
+    {
+      "riding_code": "667",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Chapleau"
+    },
+    {
+      "riding_code": "119",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Saint-François"
+    },
+    {
+      "riding_code": "697",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Laviolette–Saint-Maurice"
+    },
+    {
+      "riding_code": "709",
+      "region3": "QC",
+      "region4": "QC",
+      "riding_name": "Louis-Hébert"
+    },
+    {
+      "riding_code": "767",
+      "region3": "QC",
+      "region4": "QC",
+      "riding_name": "Charlesbourg"
+    },
+    {
+      "riding_code": "257",
+      "region3": "MTL",
+      "region4": "ILE",
+      "riding_name": "Marquette"
+    },
+    {
+      "riding_code": "627",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Berthier"
+    },
+    {
+      "riding_code": "291",
+      "region3": "MTL",
+      "region4": "ILE",
+      "riding_name": "Westmount–Saint-Louis"
+    },
+    {
+      "riding_code": "637",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Prévost"
+    },
+    {
+      "riding_code": "357",
+      "region3": "MTL",
+      "region4": "CRO",
+      "riding_name": "Fabre"
+    },
+    {
+      "riding_code": "649",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Labelle"
+    },
+    {
+      "riding_code": "809",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Gaspé"
+    },
+    {
+      "riding_code": "171",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Huntingdon"
+    },
+    {
+      "riding_code": "317",
+      "region3": "MTL",
+      "region4": "ILE",
+      "riding_name": "Hochelaga-Maisonneuve"
+    },
+    {
+      "riding_code": "691",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Trois-Rivières"
+    },
+    {
+      "riding_code": "829",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Roberval"
+    },
+    {
+      "riding_code": "301",
+      "region3": "MTL",
+      "region4": "ILE",
+      "riding_name": "Maurice-Richard"
+    },
+    {
+      "riding_code": "327",
+      "region3": "MTL",
+      "region4": "ILE",
+      "riding_name": "Bourassa-Sauvé"
+    },
+    {
+      "riding_code": "819",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Dubuc"
+    },
+    {
+      "riding_code": "297",
+      "region3": "MTL",
+      "region4": "ILE",
+      "riding_name": "Mont-Royal–Outremont"
+    },
+    {
+      "riding_code": "121",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Sherbrooke"
+    },
+    {
+      "riding_code": "147",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Arthabaska-L'Érable"
+    },
+    {
+      "riding_code": "241",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Richelieu"
+    },
+    {
+      "riding_code": "587",
+      "region3": "MTL",
+      "region4": "CRO",
+      "riding_name": "Mirabel"
+    },
+    {
+      "riding_code": "313",
+      "region3": "MTL",
+      "region4": "ILE",
+      "riding_name": "Mercier"
+    },
+    {
+      "riding_code": "341",
+      "region3": "MTL",
+      "region4": "ILE",
+      "riding_name": "Pointe-aux-Trembles"
+    },
+    {
+      "riding_code": "621",
+      "region3": "MTL",
+      "region4": "CRO",
+      "riding_name": "L'Assomption"
+    },
+    {
+      "riding_code": "299",
+      "region3": "MTL",
+      "region4": "ILE",
+      "riding_name": "Acadie"
+    },
+    {
+      "riding_code": "311",
+      "region3": "MTL",
+      "region4": "ILE",
+      "riding_name": "Gouin"
+    },
+    {
+      "riding_code": "251",
+      "region3": "MTL",
+      "region4": "ILE",
+      "riding_name": "Marguerite-Bourgeoys"
+    },
+    {
+      "riding_code": "641",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Bertrand"
+    },
+    {
+      "riding_code": "837",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Bonaventure"
+    },
+    {
+      "riding_code": "261",
+      "region3": "MTL",
+      "region4": "ILE",
+      "riding_name": "Nelligan"
+    },
+    {
+      "riding_code": "689",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Abitibi-Est"
+    },
+    {
+      "riding_code": "591",
+      "region3": "MTL",
+      "region4": "CRO",
+      "riding_name": "Bellefeuille"
+    },
+    {
+      "riding_code": "287",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Sainte-Marie–Saint-Jacques"
+    },
+    {
+      "riding_code": "589",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Argenteuil"
+    },
+    {
+      "riding_code": "217",
+      "region3": "MTL",
+      "region4": "CRO",
+      "riding_name": "Pierre-Laporte"
+    },
+    {
+      "riding_code": "259",
+      "region3": "MTL",
+      "region4": "CRO",
+      "riding_name": "Jacques-Cartier"
+    },
+    {
+      "riding_code": "609",
+      "region3": "MTL",
+      "region4": "CRO",
+      "riding_name": "Terrebonne"
+    },
+    {
+      "riding_code": "629",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Joliette"
+    },
+    {
+      "riding_code": "191",
+      "region3": "MTL",
+      "region4": "CRO",
+      "riding_name": "Châteauguay"
+    },
+    {
+      "riding_code": "751",
+      "region3": "QC",
+      "region4": "QC",
+      "riding_name": "Taschereau"
+    },
+    {
+      "riding_code": "791",
+      "region3": "QC",
+      "region4": "QC",
+      "riding_name": "Lévis"
+    },
+    {
+      "riding_code": "181",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Soulanges"
+    },
+    {
+      "riding_code": "661",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Gatineau"
+    },
+    {
+      "riding_code": "347",
+      "region3": "MTL",
+      "region4": "CRO",
+      "riding_name": "Laval-des-Rapides"
+    },
+    {
+      "riding_code": "693",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Maskinongé"
+    },
+    {
+      "riding_code": "221",
+      "region3": "MTL",
+      "region4": "CRO",
+      "riding_name": "Taillon"
+    },
+    {
+      "riding_code": "669",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Papineau"
+    },
+    {
+      "riding_code": "729",
+      "region3": "QC",
+      "region4": "QC",
+      "riding_name": "La Peltrie"
+    },
+    {
+      "riding_code": "117",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Mégantic"
+    },
+    {
+      "riding_code": "159",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Granby"
+    },
+    {
+      "riding_code": "231",
+      "region3": "MTL",
+      "region4": "CRO",
+      "riding_name": "Verchères"
+    },
+    {
+      "riding_code": "307",
+      "region3": "MTL",
+      "region4": "ILE",
+      "riding_name": "Laurier-Dorion"
+    },
+    {
+      "riding_code": "331",
+      "region3": "MTL",
+      "region4": "ILE",
+      "riding_name": "Jeanne-Mance–Viger"
+    },
+    {
+      "riding_code": "803",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Rimouski"
+    },
+    {
+      "riding_code": "761",
+      "region3": "QC",
+      "region4": "QC",
+      "riding_name": "Montmorency"
+    },
+    {
+      "riding_code": "571",
+      "region3": "MTL",
+      "region4": "CRO",
+      "riding_name": "Mille-Îles"
+    },
+    {
+      "riding_code": "139",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Marie-Lacoste-Gérin-Lajoie"
+    },
+    {
+      "riding_code": "657",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Pontiac"
+    },
+    {
+      "riding_code": "581",
+      "region3": "MTL",
+      "region4": "CRO",
+      "riding_name": "Deux-Montagnes"
+    },
+    {
+      "riding_code": "681",
+      "region3": "REG",
+      "region4": "REG",
+      "riding_name": "Abitibi-Ouest"
+    }
+  ],
+  "weights": {
+    "ILE": 0.16856969948363906,
+    "CRO": 0.26196563357215696,
+    "QC": 0.09406572891801102,
+    "REG": 0.475398938026193
+  }
+}

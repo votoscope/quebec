@@ -1,0 +1,764 @@
+[
+ {
+  "riding_name": "Abitibi-Est",
+  "member_name": "Stéphane Tremblay",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Abitibi-Ouest",
+  "member_name": "Sébastien D'Astous",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Acadie",
+  "member_name": "André Albert Morin",
+  "current_party": "LIB",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Anjou–Louis-Riel",
+  "member_name": "Nicolas Plourde",
+  "current_party": "LIB",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Argenteuil",
+  "member_name": "Pierre Nantel",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Arthabaska-L'Érable",
+  "member_name": "Tarek Henoud",
+  "current_party": "PCQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Beauce-Nord",
+  "member_name": "Patricia Drouin",
+  "current_party": "PCQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Beauce-Sud",
+  "member_name": "Jonathan Poulin",
+  "current_party": "PCQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Beauharnois",
+  "member_name": "Alexandre Daneau",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Bellechasse",
+  "member_name": "Éric Duhaime",
+  "current_party": "PCQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Bellefeuille",
+  "member_name": "Audrey Bujold",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Berthier",
+  "member_name": "Elsie Lefebvre",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Bertrand",
+  "member_name": "Alexandre Girard-Duchaine",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Blainville",
+  "member_name": "Nadine Le Gal",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Bonaventure",
+  "member_name": "Pier-Luc Bujold",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Borduas",
+  "member_name": "Cédric Gagnon-Ducharme",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Bourassa-Sauvé",
+  "member_name": "Madwa-Nika Cadet",
+  "current_party": "LIB",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Brome-Missisquoi",
+  "member_name": "Frédéric Beauchemin",
+  "current_party": "LIB",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Camille-Laurin",
+  "member_name": "Paul St-Pierre Plamondon",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Chambly",
+  "member_name": "Julie Guyot",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Champlain",
+  "member_name": "Adriana Szalontai",
+  "current_party": "PCQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Chapleau",
+  "member_name": "Michel Langevin",
+  "current_party": "LIB",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Charlesbourg",
+  "member_name": "Éloïse Coulombe",
+  "current_party": "PCQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Charlevoix–Côte-de-Beaupré",
+  "member_name": "Caroline Simard",
+  "current_party": "PCQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Châteauguay",
+  "member_name": "Félix Rhéaume",
+  "current_party": "LIB",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Chauveau",
+  "member_name": "Karim Elayoubi",
+  "current_party": "PCQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Chicoutimi",
+  "member_name": "Marie-Karlynn Laflamme",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Chomedey",
+  "member_name": "Madeleine Féquière",
+  "current_party": "LIB",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Chutes-de-la-Chaudière",
+  "member_name": "Dominique Dumas",
+  "current_party": "PCQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Côte-du-Sud",
+  "member_name": "Frédéric Poulin",
+  "current_party": "PCQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Daniel-Johnson",
+  "member_name": "Nathalie Boisclair",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "D'Arcy-McGee",
+  "member_name": "Elisabeth Prass",
+  "current_party": "LIB",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Deux-Montagnes",
+  "member_name": "Linda Vaillant",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Drummond–Bois-Francs",
+  "member_name": "Charles Page",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Dubuc",
+  "member_name": "Émile Simard",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Duplessis",
+  "member_name": "Meggie Richard",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Fabre",
+  "member_name": "Marie Claude Fournier",
+  "current_party": "LIB",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Gaspé",
+  "member_name": "Méganne Perry Mélançon",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Gatineau",
+  "member_name": "David Logue",
+  "current_party": "LIB",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Gouin",
+  "member_name": "Alexandre Boulerice",
+  "current_party": "QS",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Granby",
+  "member_name": "Jean-François Arsenault",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Groulx",
+  "member_name": "Marie-Claude Sarrazin",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Hochelaga-Maisonneuve",
+  "member_name": "Alexandre Leduc",
+  "current_party": "QS",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Hull",
+  "member_name": "Sacha Cannon",
+  "current_party": "LIB",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Huntingdon",
+  "member_name": "Frédéric Laplante",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Iberville",
+  "member_name": "Camille Pellerin-Forget",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Îles-de-la-Madeleine",
+  "member_name": "Joël Arseneau",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Jacques-Cartier",
+  "member_name": "Gregory Kelley",
+  "current_party": "LIB",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Jean-Lesage",
+  "member_name": "Sol Zanetti",
+  "current_party": "QS",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Jeanne-Mance–Viger",
+  "member_name": "Filomena Rotiroti",
+  "current_party": "LIB",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Jean-Talon",
+  "member_name": "Julie White",
+  "current_party": "LIB",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Joliette",
+  "member_name": "Véronique Venne",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Jonquière",
+  "member_name": "Jimmy Bouchard",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Labelle",
+  "member_name": "Catherine Drouin",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Lac-Saint-Jean",
+  "member_name": "William Fradette",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "LaFontaine",
+  "member_name": "Marc Tanguay",
+  "current_party": "LIB",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "La Peltrie",
+  "member_name": "Maïté Blanchette Vézina",
+  "current_party": "PCQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "La Pinière",
+  "member_name": "Linda Caron",
+  "current_party": "LIB",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "La Prairie",
+  "member_name": "Sonia Ziadé",
+  "current_party": "LIB",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "L'Assomption",
+  "member_name": "Maxime Laporte",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Laurier-Dorion",
+  "member_name": "Andrés Fontecilla",
+  "current_party": "QS",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Laval-des-Rapides",
+  "member_name": "Caroline De Guire",
+  "current_party": "LIB",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Laviolette–Saint-Maurice",
+  "member_name": "Élodie Murphy-Gauthier",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Les Plaines",
+  "member_name": "Dieudonné Ella Oyono",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Lévis",
+  "member_name": "Karine Laflamme",
+  "current_party": "PCQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Lotbinière-Frontenac",
+  "member_name": "Renaud Labrecque",
+  "current_party": "PCQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Louis-Hébert",
+  "member_name": "Marcos Archambault",
+  "current_party": "PCQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Marguerite-Bourgeoys",
+  "member_name": "Michel Leblanc",
+  "current_party": "LIB",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Marie-Lacoste-Gérin-Lajoie",
+  "member_name": "Natalie Bisaillon",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Marie-Victorin",
+  "member_name": "Nicolas Marceau",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Marquette",
+  "member_name": "Enrico Ciccone",
+  "current_party": "LIB",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Maskinongé",
+  "member_name": "Isabelle Blais",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Masson",
+  "member_name": "Stéphane Handfield",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Matane-Matapédia-Mitis",
+  "member_name": "Pascal Bérubé",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Maurice-Richard",
+  "member_name": "Nada Boumeftah",
+  "current_party": "LIB",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Mégantic",
+  "member_name": "Jimmy Gagnon",
+  "current_party": "PCQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Mercier",
+  "member_name": "Ruba Ghazal",
+  "current_party": "QS",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Mille-Îles",
+  "member_name": "Virginie Dufour",
+  "current_party": "LIB",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Mirabel",
+  "member_name": "Geneviève Couture",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Montarville",
+  "member_name": "Mathieu Lavoie",
+  "current_party": "LIB",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Montmorency",
+  "member_name": "Marie-Josée Hélie",
+  "current_party": "PCQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Mont-Royal–Outremont",
+  "member_name": "Michelle Setlakwe",
+  "current_party": "LIB",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Nelligan",
+  "member_name": "Monsef Derraji",
+  "current_party": "LIB",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Nicolet-Bécancour",
+  "member_name": "Guillaume Langlois",
+  "current_party": "PCQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Notre-Dame-de-Grâce",
+  "member_name": "Désirée McGraw",
+  "current_party": "LIB",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Orford",
+  "member_name": "Charles Milliard",
+  "current_party": "LIB",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Papineau",
+  "member_name": "Isabelle Millette",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Pierre-Laporte",
+  "member_name": "David Bowles",
+  "current_party": "LIB",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Pointe-aux-Trembles",
+  "member_name": "Stéphane Paquet",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Pontiac",
+  "member_name": "André Fortin",
+  "current_party": "LIB",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Portneuf",
+  "member_name": "Marcel Bouchard",
+  "current_party": "PCQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Prévost",
+  "member_name": "Anne Nguyen",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "René-Lévesque",
+  "member_name": "Odette Lavigne",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Repentigny",
+  "member_name": "Nicolas Girard",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Richelieu",
+  "member_name": "Jocelyn Desjardins",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Richmond",
+  "member_name": "Bernard Sévigny",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Rimouski",
+  "member_name": "Yohann St-Pierre",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Rivière-du-Loup–Témiscouata–Les Basques",
+  "member_name": "Ariane Boyer",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Robert-Baldwin",
+  "member_name": "Brigitte Garceau",
+  "current_party": "LIB",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Roberval",
+  "member_name": "Isabelle Thibeault",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Rosemont",
+  "member_name": "Gisèle Pouhe Njall",
+  "current_party": "QS",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Rousseau",
+  "member_name": "Mathieu Lebrun",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Rouyn-Noranda–Témiscamingue",
+  "member_name": "Diane Dallaire",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Saint-François",
+  "member_name": "Sylvie Tanguay",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Saint-Henri–Sainte-Anne",
+  "member_name": "Benoit Clermont",
+  "current_party": "LIB",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Saint-Hyacinthe",
+  "member_name": "Simon-Pierre Savard-Tremblay",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Saint-Jean",
+  "member_name": "Gaétan Bédard",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Saint-Jérôme",
+  "member_name": "Sandrine Michon",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Saint-Laurent",
+  "member_name": "Valérie Assouline",
+  "current_party": "LIB",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Sainte-Marie–Saint-Jacques",
+  "member_name": "Roxane Milot",
+  "current_party": "QS",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Sainte-Rose",
+  "member_name": "Cécile Tremblay",
+  "current_party": "LIB",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Sanguinet",
+  "member_name": "Alain Therrien",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Sherbrooke",
+  "member_name": "Stéphanie Vachon",
+  "current_party": "QS",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Soulanges",
+  "member_name": "Olivier Bertin-Mahieux",
+  "current_party": "LIB",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Taillon",
+  "member_name": "Sandra Hernández",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Taschereau",
+  "member_name": "Étienne Grandmont",
+  "current_party": "QS",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Terrebonne",
+  "member_name": "Catherine Gentilcore",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Trois-Rivières",
+  "member_name": "Jean Pellerin",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Ungava",
+  "member_name": "Sonia Caron",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Vachon",
+  "member_name": "Affine Lwalalika",
+  "current_party": "LIB",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Vanier-Les Rivières",
+  "member_name": "Patrick Paquet",
+  "current_party": "PCQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Vaudreuil",
+  "member_name": "James Hughes",
+  "current_party": "LIB",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Verchères",
+  "member_name": "Guy Jr Lapointe",
+  "current_party": "PQ",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Verdun",
+  "member_name": "Antoine Dionne-Charest",
+  "current_party": "LIB",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Viau",
+  "member_name": "Frantz Benjamin",
+  "current_party": "LIB",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Vimont-Auteuil",
+  "member_name": "Louis Ialenti",
+  "current_party": "LIB",
+  "elected_with_note": null
+ },
+ {
+  "riding_name": "Westmount–Saint-Louis",
+  "member_name": "Jennifer Maccarone",
+  "current_party": "LIB",
+  "elected_with_note": null
+ }
+]

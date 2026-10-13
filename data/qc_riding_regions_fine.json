@@ -1,0 +1,1196 @@
+{
+ "groups": {
+  "BSL_GIM": "Bas-Saint-Laurent, Gaspésie et Îles-de-la-Madeleine",
+  "SAG_CN": "Saguenay-Lac-Saint-Jean et Côte-Nord",
+  "CN": "Capitale-Nationale",
+  "MAU": "Mauricie",
+  "EST": "Estrie",
+  "MTL": "Île de Montréal",
+  "OUT": "Outaouais",
+  "AT_NQ": "Abitibi-Témiscamingue et Nord-du-Québec",
+  "CA": "Chaudière-Appalaches",
+  "LAV": "Laval",
+  "LAN": "Lanaudière",
+  "LAU": "Laurentides",
+  "MON": "Montérégie",
+  "CDQ": "Centre-du-Québec"
+ },
+ "metro": {
+  "450": "RMR de Montréal hors île",
+  "ILE": "Île de Montréal",
+  "VQC": "Ville de Québec",
+  "AQC": "RMR de Québec hors ville",
+  "HORS": "Hors RMR"
+ },
+ "ridings": {
+  "117": {
+   "ra": {
+    "EST": 0.9224,
+    "CA": 0.0776
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 61885
+  },
+  "119": {
+   "ra": {
+    "EST": 1
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 71172
+  },
+  "121": {
+   "ra": {
+    "EST": 1
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 71356
+  },
+  "127": {
+   "ra": {
+    "EST": 1
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 54797
+  },
+  "131": {
+   "ra": {
+    "EST": 0.1182,
+    "MON": 0.8818
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 58028
+  },
+  "137": {
+   "ra": {
+    "EST": 1
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 74022
+  },
+  "139": {
+   "ra": {
+    "CDQ": 1
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 58911
+  },
+  "141": {
+   "ra": {
+    "CDQ": 1
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 64918
+  },
+  "147": {
+   "ra": {
+    "CDQ": 1
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 77224
+  },
+  "151": {
+   "ra": {
+    "CDQ": 1
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 49392
+  },
+  "157": {
+   "ra": {
+    "MON": 1
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 65404
+  },
+  "159": {
+   "ra": {
+    "MON": 1
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 72366
+  },
+  "161": {
+   "ra": {
+    "MON": 1
+   },
+   "metro": {
+    "450": 0.3226,
+    "HORS": 0.6774
+   },
+   "population": 63526
+  },
+  "167": {
+   "ra": {
+    "MON": 1
+   },
+   "metro": {
+    "450": 1
+   },
+   "population": 77377
+  },
+  "171": {
+   "ra": {
+    "MON": 1
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 57950
+  },
+  "179": {
+   "ra": {
+    "MON": 1
+   },
+   "metro": {
+    "450": 0.3069,
+    "HORS": 0.6931
+   },
+   "population": 68799
+  },
+  "181": {
+   "ra": {
+    "MON": 1
+   },
+   "metro": {
+    "450": 0.7493,
+    "HORS": 0.2507
+   },
+   "population": 74565
+  },
+  "187": {
+   "ra": {
+    "MON": 1
+   },
+   "metro": {
+    "450": 1
+   },
+   "population": 80562
+  },
+  "191": {
+   "ra": {
+    "MON": 1
+   },
+   "metro": {
+    "450": 1
+   },
+   "population": 70600
+  },
+  "197": {
+   "ra": {
+    "MON": 1
+   },
+   "metro": {
+    "450": 0.8471,
+    "HORS": 0.1529
+   },
+   "population": 58597
+  },
+  "199": {
+   "ra": {
+    "MON": 1
+   },
+   "metro": {
+    "450": 1
+   },
+   "population": 65328
+  },
+  "201": {
+   "ra": {
+    "MON": 1
+   },
+   "metro": {
+    "450": 1
+   },
+   "population": 81627
+  },
+  "207": {
+   "ra": {
+    "MON": 1
+   },
+   "metro": {
+    "450": 1
+   },
+   "population": 70523
+  },
+  "211": {
+   "ra": {
+    "MON": 1
+   },
+   "metro": {
+    "450": 1
+   },
+   "population": 71192
+  },
+  "217": {
+   "ra": {
+    "MON": 1
+   },
+   "metro": {
+    "450": 1
+   },
+   "population": 74614
+  },
+  "219": {
+   "ra": {
+    "MON": 1
+   },
+   "metro": {
+    "450": 1
+   },
+   "population": 66320
+  },
+  "221": {
+   "ra": {
+    "MON": 1
+   },
+   "metro": {
+    "450": 1
+   },
+   "population": 75016
+  },
+  "227": {
+   "ra": {
+    "MON": 1
+   },
+   "metro": {
+    "450": 1
+   },
+   "population": 68016
+  },
+  "231": {
+   "ra": {
+    "MON": 1
+   },
+   "metro": {
+    "450": 0.9928,
+    "HORS": 0.0072
+   },
+   "population": 70833
+  },
+  "237": {
+   "ra": {
+    "MON": 1
+   },
+   "metro": {
+    "450": 0.843,
+    "HORS": 0.157
+   },
+   "population": 71566
+  },
+  "239": {
+   "ra": {
+    "MON": 1
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 71156
+  },
+  "241": {
+   "ra": {
+    "MON": 1
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 64512
+  },
+  "247": {
+   "ra": {
+    "MTL": 1
+   },
+   "metro": {
+    "ILE": 1
+   },
+   "population": 69609
+  },
+  "251": {
+   "ra": {
+    "MTL": 1
+   },
+   "metro": {
+    "ILE": 1
+   },
+   "population": 82235
+  },
+  "257": {
+   "ra": {
+    "MTL": 1
+   },
+   "metro": {
+    "ILE": 1
+   },
+   "population": 65760
+  },
+  "259": {
+   "ra": {
+    "MTL": 1
+   },
+   "metro": {
+    "ILE": 1
+   },
+   "population": 62507
+  },
+  "261": {
+   "ra": {
+    "MTL": 1
+   },
+   "metro": {
+    "ILE": 1
+   },
+   "population": 80385
+  },
+  "267": {
+   "ra": {
+    "MTL": 1
+   },
+   "metro": {
+    "ILE": 1
+   },
+   "population": 75764
+  },
+  "271": {
+   "ra": {
+    "MTL": 1
+   },
+   "metro": {
+    "ILE": 1
+   },
+   "population": 96205
+  },
+  "277": {
+   "ra": {
+    "MTL": 1
+   },
+   "metro": {
+    "ILE": 1
+   },
+   "population": 89418
+  },
+  "279": {
+   "ra": {
+    "MTL": 1
+   },
+   "metro": {
+    "ILE": 1
+   },
+   "population": 72525
+  },
+  "281": {
+   "ra": {
+    "MTL": 1
+   },
+   "metro": {
+    "ILE": 1
+   },
+   "population": 85321
+  },
+  "287": {
+   "ra": {
+    "MTL": 1
+   },
+   "metro": {
+    "ILE": 1
+   },
+   "population": 66387
+  },
+  "291": {
+   "ra": {
+    "MTL": 1
+   },
+   "metro": {
+    "ILE": 1
+   },
+   "population": 84755
+  },
+  "297": {
+   "ra": {
+    "MTL": 1
+   },
+   "metro": {
+    "ILE": 1
+   },
+   "population": 94249
+  },
+  "299": {
+   "ra": {
+    "MTL": 1
+   },
+   "metro": {
+    "ILE": 1
+   },
+   "population": 80982
+  },
+  "301": {
+   "ra": {
+    "MTL": 1
+   },
+   "metro": {
+    "ILE": 1
+   },
+   "population": 68119
+  },
+  "307": {
+   "ra": {
+    "MTL": 1
+   },
+   "metro": {
+    "ILE": 1
+   },
+   "population": 74672
+  },
+  "311": {
+   "ra": {
+    "MTL": 1
+   },
+   "metro": {
+    "ILE": 1
+   },
+   "population": 61049
+  },
+  "313": {
+   "ra": {
+    "MTL": 1
+   },
+   "metro": {
+    "ILE": 1
+   },
+   "population": 70305
+  },
+  "317": {
+   "ra": {
+    "MTL": 1
+   },
+   "metro": {
+    "ILE": 1
+   },
+   "population": 57837
+  },
+  "319": {
+   "ra": {
+    "MTL": 1
+   },
+   "metro": {
+    "ILE": 1
+   },
+   "population": 76228
+  },
+  "321": {
+   "ra": {
+    "MTL": 1
+   },
+   "metro": {
+    "ILE": 1
+   },
+   "population": 68942
+  },
+  "327": {
+   "ra": {
+    "MTL": 1
+   },
+   "metro": {
+    "ILE": 1
+   },
+   "population": 81030
+  },
+  "331": {
+   "ra": {
+    "MTL": 1
+   },
+   "metro": {
+    "ILE": 1
+   },
+   "population": 80640
+  },
+  "337": {
+   "ra": {
+    "MTL": 1
+   },
+   "metro": {
+    "ILE": 1
+   },
+   "population": 71891
+  },
+  "339": {
+   "ra": {
+    "MTL": 1
+   },
+   "metro": {
+    "ILE": 1
+   },
+   "population": 58072
+  },
+  "341": {
+   "ra": {
+    "MTL": 1
+   },
+   "metro": {
+    "ILE": 1
+   },
+   "population": 54263
+  },
+  "347": {
+   "ra": {
+    "LAV": 1
+   },
+   "metro": {
+    "450": 1
+   },
+   "population": 81719
+  },
+  "351": {
+   "ra": {
+    "LAV": 1
+   },
+   "metro": {
+    "450": 1
+   },
+   "population": 73747
+  },
+  "357": {
+   "ra": {
+    "LAV": 1
+   },
+   "metro": {
+    "450": 1
+   },
+   "population": 79682
+  },
+  "359": {
+   "ra": {
+    "LAV": 1
+   },
+   "metro": {
+    "450": 1
+   },
+   "population": 76501
+  },
+  "569": {
+   "ra": {
+    "LAV": 1
+   },
+   "metro": {
+    "450": 1
+   },
+   "population": 60189
+  },
+  "571": {
+   "ra": {
+    "LAV": 1
+   },
+   "metro": {
+    "450": 1
+   },
+   "population": 66528
+  },
+  "577": {
+   "ra": {
+    "LAU": 1
+   },
+   "metro": {
+    "450": 1
+   },
+   "population": 68931
+  },
+  "581": {
+   "ra": {
+    "LAU": 1
+   },
+   "metro": {
+    "450": 1
+   },
+   "population": 63191
+  },
+  "587": {
+   "ra": {
+    "LAU": 1
+   },
+   "metro": {
+    "450": 1
+   },
+   "population": 71374
+  },
+  "589": {
+   "ra": {
+    "LAU": 1
+   },
+   "metro": {
+    "450": 0.0844,
+    "HORS": 0.9156
+   },
+   "population": 48176
+  },
+  "591": {
+   "ra": {
+    "LAU": 1
+   },
+   "metro": {
+    "450": 1
+   },
+   "population": 54121
+  },
+  "597": {
+   "ra": {
+    "LAU": 1
+   },
+   "metro": {
+    "450": 1
+   },
+   "population": 52925
+  },
+  "601": {
+   "ra": {
+    "LAN": 0.5198,
+    "LAU": 0.4802
+   },
+   "metro": {
+    "450": 1
+   },
+   "population": 65368
+  },
+  "607": {
+   "ra": {
+    "LAU": 1
+   },
+   "metro": {
+    "450": 1
+   },
+   "population": 79480
+  },
+  "609": {
+   "ra": {
+    "LAN": 1
+   },
+   "metro": {
+    "450": 1
+   },
+   "population": 71338
+  },
+  "611": {
+   "ra": {
+    "LAN": 1
+   },
+   "metro": {
+    "450": 1
+   },
+   "population": 65810
+  },
+  "617": {
+   "ra": {
+    "LAN": 1
+   },
+   "metro": {
+    "450": 1
+   },
+   "population": 70714
+  },
+  "621": {
+   "ra": {
+    "LAN": 1
+   },
+   "metro": {
+    "450": 1
+   },
+   "population": 71798
+  },
+  "627": {
+   "ra": {
+    "LAN": 1
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 61429
+  },
+  "629": {
+   "ra": {
+    "LAN": 1
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 71124
+  },
+  "631": {
+   "ra": {
+    "LAN": 1
+   },
+   "metro": {
+    "450": 0.5024,
+    "HORS": 0.4976
+   },
+   "population": 58680
+  },
+  "637": {
+   "ra": {
+    "LAU": 1
+   },
+   "metro": {
+    "450": 0.0246,
+    "HORS": 0.9754
+   },
+   "population": 62909
+  },
+  "641": {
+   "ra": {
+    "LAN": 0.3665,
+    "LAU": 0.6335
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 64734
+  },
+  "649": {
+   "ra": {
+    "LAU": 1
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 62579
+  },
+  "651": {
+   "ra": {
+    "OUT": 1
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 89303
+  },
+  "657": {
+   "ra": {
+    "OUT": 1
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 85121
+  },
+  "661": {
+   "ra": {
+    "OUT": 1
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 75785
+  },
+  "667": {
+   "ra": {
+    "OUT": 1
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 80439
+  },
+  "669": {
+   "ra": {
+    "OUT": 1
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 74510
+  },
+  "671": {
+   "ra": {
+    "AT_NQ": 1
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 57734
+  },
+  "681": {
+   "ra": {
+    "AT_NQ": 1
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 45765
+  },
+  "689": {
+   "ra": {
+    "AT_NQ": 1
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 43583
+  },
+  "691": {
+   "ra": {
+    "MAU": 1
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 70940
+  },
+  "693": {
+   "ra": {
+    "MAU": 1
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 56706
+  },
+  "697": {
+   "ra": {
+    "MAU": 1
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 72158
+  },
+  "701": {
+   "ra": {
+    "MAU": 1
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 73251
+  },
+  "707": {
+   "ra": {
+    "CN": 1
+   },
+   "metro": {
+    "VQC": 1
+   },
+   "population": 70015
+  },
+  "709": {
+   "ra": {
+    "CN": 1
+   },
+   "metro": {
+    "VQC": 0.6596,
+    "AQC": 0.3404
+   },
+   "population": 58486
+  },
+  "727": {
+   "ra": {
+    "CN": 1
+   },
+   "metro": {
+    "AQC": 0.2335,
+    "HORS": 0.7665
+   },
+   "population": 66596
+  },
+  "729": {
+   "ra": {
+    "CN": 1
+   },
+   "metro": {
+    "AQC": 0.3398,
+    "VQC": 0.6602
+   },
+   "population": 77094
+  },
+  "749": {
+   "ra": {
+    "CN": 1
+   },
+   "metro": {
+    "VQC": 0.9939,
+    "AQC": 0.0061
+   },
+   "population": 71177
+  },
+  "751": {
+   "ra": {
+    "CN": 1
+   },
+   "metro": {
+    "VQC": 0.9962,
+    "AQC": 0.0038
+   },
+   "population": 63594
+  },
+  "757": {
+   "ra": {
+    "CN": 1
+   },
+   "metro": {
+    "VQC": 1
+   },
+   "population": 58532
+  },
+  "761": {
+   "ra": {
+    "CN": 1
+   },
+   "metro": {
+    "AQC": 0.1115,
+    "VQC": 0.8885
+   },
+   "population": 75948
+  },
+  "767": {
+   "ra": {
+    "CN": 1
+   },
+   "metro": {
+    "VQC": 1
+   },
+   "population": 74361
+  },
+  "769": {
+   "ra": {
+    "CN": 1
+   },
+   "metro": {
+    "AQC": 0.2728,
+    "VQC": 0.7272
+   },
+   "population": 76310
+  },
+  "771": {
+   "ra": {
+    "CN": 1
+   },
+   "metro": {
+    "HORS": 0.6459,
+    "AQC": 0.3541
+   },
+   "population": 65837
+  },
+  "777": {
+   "ra": {
+    "CA": 0.962,
+    "EST": 0.038
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 63596
+  },
+  "781": {
+   "ra": {
+    "CA": 1
+   },
+   "metro": {
+    "HORS": 0.8809,
+    "AQC": 0.1191
+   },
+   "population": 57241
+  },
+  "787": {
+   "ra": {
+    "CA": 1
+   },
+   "metro": {
+    "HORS": 0.8671,
+    "AQC": 0.1329
+   },
+   "population": 72624
+  },
+  "789": {
+   "ra": {
+    "CA": 1
+   },
+   "metro": {
+    "AQC": 1
+   },
+   "population": 77205
+  },
+  "791": {
+   "ra": {
+    "CA": 1
+   },
+   "metro": {
+    "AQC": 1
+   },
+   "population": 62842
+  },
+  "797": {
+   "ra": {
+    "CA": 1
+   },
+   "metro": {
+    "HORS": 0.6788,
+    "AQC": 0.3212
+   },
+   "population": 57337
+  },
+  "799": {
+   "ra": {
+    "BSL_GIM": 0.3471,
+    "CA": 0.6529
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 61386
+  },
+  "801": {
+   "ra": {
+    "BSL_GIM": 1
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 63703
+  },
+  "803": {
+   "ra": {
+    "BSL_GIM": 1
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 57191
+  },
+  "807": {
+   "ra": {
+    "BSL_GIM": 1
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 56838
+  },
+  "809": {
+   "ra": {
+    "BSL_GIM": 1
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 35955
+  },
+  "811": {
+   "ra": {
+    "BSL_GIM": 1
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 12654
+  },
+  "813": {
+   "ra": {
+    "SAG_CN": 1
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 48089
+  },
+  "817": {
+   "ra": {
+    "SAG_CN": 1
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 40436
+  },
+  "819": {
+   "ra": {
+    "SAG_CN": 1
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 53180
+  },
+  "821": {
+   "ra": {
+    "SAG_CN": 1
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 57896
+  },
+  "823": {
+   "ra": {
+    "SAG_CN": 1
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 55156
+  },
+  "827": {
+   "ra": {
+    "SAG_CN": 1
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 54286
+  },
+  "829": {
+   "ra": {
+    "SAG_CN": 1
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 55034
+  },
+  "831": {
+   "ra": {
+    "AT_NQ": 1
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 45740
+  },
+  "833": {
+   "ra": {
+    "MTL": 1
+   },
+   "metro": {
+    "ILE": 1
+   },
+   "population": 63431
+  },
+  "837": {
+   "ra": {
+    "BSL_GIM": 1
+   },
+   "metro": {
+    "HORS": 1
+   },
+   "population": 40733
+  }
+ }
+}

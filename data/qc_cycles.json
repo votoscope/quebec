@@ -1,0 +1,94 @@
+{
+  "cycle": 2030,
+  "electionDate": "2030-10-07",
+  "previousElectionDate": "2026-10-05",
+  "changepoints": [
+    "2026-01-14",
+    "2026-04-12"
+  ],
+  "campaigns": [
+    [
+      "2014-03-05",
+      "2014-04-07"
+    ],
+    [
+      "2018-08-23",
+      "2018-10-01"
+    ],
+    [
+      "2022-08-28",
+      "2022-10-03"
+    ],
+    [
+      "2026-08-26",
+      "2026-10-05"
+    ]
+  ],
+  "cycleBoundaries": [
+    [
+      "2018-10-01",
+      2018
+    ],
+    [
+      "2022-10-03",
+      2022
+    ],
+    [
+      "2026-10-05",
+      2026
+    ]
+  ],
+  "leadersPrevious": [
+    {
+      "party": "CAQ",
+      "riding": "Trois-Rivières"
+    },
+    {
+      "party": "LIB",
+      "riding": "Orford"
+    },
+    {
+      "party": "PCQ",
+      "riding": "Bellechasse"
+    },
+    {
+      "party": "PQ",
+      "riding": "Camille-Laurin"
+    },
+    {
+      "party": "QS",
+      "riding": "Mercier"
+    }
+  ],
+  "byelectionBounds": {
+    "after": "2026-10-05",
+    "before": "2030-10-07"
+  },
+  "residualTransitions": [
+    [
+      "2014-04-07",
+      "2011",
+      "2018-10-01",
+      "2017"
+    ],
+    [
+      "2018-10-01",
+      "2017",
+      "2022-10-03",
+      "2017"
+    ],
+    [
+      "2022-10-03",
+      "2026",
+      "2026-10-05",
+      "2026"
+    ]
+  ],
+  "files": {
+    "baseline": "qc_2026_results_2026map.json",
+    "incumbents": "qc_incumbents_2030.json",
+    "leaders": "qc_leaders.json",
+    "extraResults": "qc_2026_results_2026map.json"
+  },
+  "notes": "Cycle 2030 (scrutin à date fixe : premier lundi d'octobre). La fenêtre de campagne 2030 s'ajoute à « campaigns » au déclenchement ; les points de rupture du cycle à « changepoints ». « files » nomme les intrants propres au cycle (baseline = résultats de l'élection précédente sur la carte en vigueur ; sortants ; chefs, à vérifier par `deno task candidates`). « extraResults » complète les résultats historiques pour le bassin de résidus. Les constantes du cycle 2026 sont figées pour le test golden dans test/fixtures/qc_cycles_2026.json."
+}

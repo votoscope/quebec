@@ -9,3 +9,26 @@
 # https://docs.deno.com/runtime/reference/cli/coverage/
 coverage/
 *.lcov
+
+# Votoscope
+node_modules/
+dist/
+data/raw/
+data/polls.duckdb
+data/polls.duckdb.wal
+capture_*.png
+# Consignes locales de l'assistant, hors dépôt
+CLAUDE.md
+AGENT.md
+
+# Votoscope
+node_modules/
+dist/
+data/raw/
+data/polls.duckdb
+data/polls.duckdb.wal
+# Consignes locales, hors dépôt
+CLAUDE.md
+AGENT.md
+TODO.md
+JOURNAL.md
