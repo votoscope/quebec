@@ -21,7 +21,7 @@ import {
   applyOpenSeatPenalty,
   applyCompositionFactor,
 } from "./swing.js";
-import { simulateSeatCounts, seatDistributions, governmentScenarios, medoidDraw, scaleResiduals, winsorizeResiduals } from "./simulate.js";
+import { simulateSeatCounts, seatDistributions, governmentScenarios, pivotPower, medoidDraw, scaleResiduals, winsorizeResiduals } from "./simulate.js";
 import { fitRegionalTrend, REGIONS } from "./regionalTrend.js";
 import { residualIlr, ilrMatrix } from "./ridingEffects.js";
 import { trainRidingEffects, predictRidingEffects } from "./ridingProjection.js";
@@ -150,7 +150,12 @@ export function computeProjection(data, {
   const nameKey = (n) => String(n ?? "").normalize("NFKD").replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
   const memberKeyByRiding = new Map(incumbents.map((r) => [r.riding_name, nameKey(r.member_name)]));
 
-  for (const leader of L.leaders ? leaders : []) {
+  // A party whose previous leader is gone and has no successor yet is a
+  // departure case in the previous leader's riding, like any other.
+  const leaderless = LEADERS_PREVIOUS
+    .filter((l) => !leaders.some((x) => x.party_code === l.party))
+    .map((l) => ({ party_code: l.party, leader_name: null, riding_name: null }));
+  for (const leader of L.leaders ? [...leaders, ...leaderless] : []) {
     const party = leader.party_code;
     const partyIdx = partyCodes.indexOf(party);
     if (partyIdx < 0) continue;
@@ -482,5 +487,6 @@ export function computeProjection(data, {
     ridingWinProbs: simulation.winProbs,
     totalSeats: simulation.totalSeats,
     scenarios: governmentScenarios(simulation.draws, simulation.totalSeats, partyCodes),
+    pivotPower: pivotPower(simulation.draws, simulation.totalSeats, partyCodes),
   };
 }

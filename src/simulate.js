@@ -258,11 +258,11 @@ export function seatDistributions(draws, partyCodes) {
  * Classify every draw into exactly one mutually exclusive government
  * scenario, so the reported probabilities partition to 1.
  *
- * For a minority, the "balance of power" party is the SMALLEST party whose
- * seats added to the plurality winner's would reach a majority -- the
- * cheapest partner that can make the government work. Reported as
- * arithmetic, not as a prediction that such an arrangement would be agreed:
- * who actually supports whom is a political choice this model can't see.
+ * For a minority, every party whose seats added to the plurality winner's
+ * reach a majority is listed as a sufficient support (smallest first). No
+ * single party need hold that position: several usually do, the official
+ * opposition included. Arithmetic only: who actually supports whom is a
+ * political choice this model can't see.
  */
 export function governmentScenarios(draws, totalSeats, partyCodes) {
   const threshold = Math.floor(totalSeats / 2) + 1;
@@ -282,31 +282,13 @@ export function governmentScenarios(draws, totalSeats, partyCodes) {
       key = `maj:${leader.party}`;
       detail = { type: "majority", leader: leader.party, opposition: ranked[1]?.party ?? null };
     } else {
-      const needed = threshold - leader.seats;
-      const opposition = ranked[1] ?? null;
-
-      // The balance of power is held by a THIRD party: a smaller party whose
-      // support lets the government pass votes without the official
-      // opposition. If the only party big enough is the opposition itself,
-      // that isn't a balance of power at all -- it would be the two largest
-      // parties governing together, which is a different arrangement and is
-      // labelled as such rather than misreported.
-      const kingmakers = ranked
-        .slice(2)
-        .filter((d) => d.seats >= needed)
-        .sort((a, b) => a.seats - b.seats);
-
-      const balance = kingmakers.length ? kingmakers[0].party : null;
-      const needsOpposition = !balance && opposition && leader.seats + opposition.seats >= threshold;
-
-      key = `min:${leader.party}:${balance ?? (needsOpposition ? "opp" : "none")}`;
-      detail = {
-        type: "minority",
-        leader: leader.party,
-        balanceOfPower: balance,
-        needsOpposition,
-        opposition: opposition?.party ?? null,
-      };
+      const supports = ranked
+        .slice(1)
+        .filter((d) => leader.seats + d.seats >= threshold)
+        .sort((a, b) => a.seats - b.seats)
+        .map((d) => d.party);
+      key = `min:${leader.party}:${supports.join("+")}`;
+      detail = { type: "minority", leader: leader.party, supports, opposition: ranked[1]?.party ?? null };
     }
 
     if (!scenarios.has(key)) scenarios.set(key, { ...detail, count: 0 });
@@ -317,6 +299,42 @@ export function governmentScenarios(draws, totalSeats, partyCodes) {
   return [...scenarios.values()]
     .map((s) => ({ ...s, probability: s.count / total }))
     .sort((a, b) => b.probability - a.probability);
+}
+
+/**
+ * Pivot power of each party: the normalised Banzhaf index of the seat
+ * allocation in each draw, averaged over draws. In a draw, a party is a swing
+ * member of a coalition (any subset of the parties holding seats) that
+ * reaches the majority and falls short without it; its index is its number
+ * of swings over the total number of swings of all parties. A party with a
+ * majority alone has index 1. Also returned: the probability that the party
+ * is a swing member of at least one winning coalition other than a majority
+ * of its own (pPivotal).
+ */
+export function pivotPower(draws, totalSeats, partyCodes) {
+  const threshold = Math.floor(totalSeats / 2) + 1;
+  const mean = Object.fromEntries(partyCodes.map((p) => [p, 0]));
+  const pivotal = Object.fromEntries(partyCodes.map((p) => [p, 0]));
+  for (const draw of draws) {
+    const players = partyCodes.filter((p) => draw[p] > 0);
+    const n = players.length;
+    const swings = new Array(n).fill(0);
+    for (let mask = 1; mask < 1 << n; mask++) {
+      let seats = 0;
+      for (let i = 0; i < n; i++) if (mask & (1 << i)) seats += draw[players[i]];
+      if (seats < threshold) continue;
+      for (let i = 0; i < n; i++) {
+        if (mask & (1 << i) && seats - draw[players[i]] < threshold) swings[i]++;
+      }
+    }
+    const tot = swings.reduce((a, b) => a + b, 0);
+    const majority = players.some((p) => draw[p] >= threshold);
+    players.forEach((p, i) => {
+      if (tot > 0) mean[p] += swings[i] / tot;
+      if (!majority && swings[i] > 0) pivotal[p]++;
+    });
+  }
+  return Object.fromEntries(partyCodes.map((p) => [p, { banzhaf: mean[p] / draws.length, pPivotal: pivotal[p] / draws.length }]));
 }
 
 /**
