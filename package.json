@@ -1,7 +1,7 @@
 {
-  "name": "votoscope-quebec",
+  "name": "votovision-quebec",
   "version": "0.1.0",
-  "description": "Modèle de projection des élections générales québécoises (Votoscope)",
+  "description": "Modèle de projection des élections générales québécoises (Votovision)",
   "type": "module",
   "scripts": {
     "compute": "node tools/compute.mjs",

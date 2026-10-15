@@ -35,7 +35,7 @@
 import { parseHTML } from "linkedom";
 const fetchPage = async (title: string): Promise<{ title: string; revid: number; html: string }> => {
   const url = `https://fr.wikipedia.org/w/api.php?${new URLSearchParams({ action: "parse", page: title, prop: "text|revid", format: "json", formatversion: "2" })}`;
-  const j = await (await fetch(url, { headers: { "User-Agent": "votoscope-quebec/0.1 (yysrk9lh@duck.com)" } })).json();
+  const j = await (await fetch(url, { headers: { "User-Agent": "votovision-quebec/0.1 (yysrk9lh@duck.com)" } })).json();
   return { title, revid: j.parse.revid, html: j.parse.text };
 };
 

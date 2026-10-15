@@ -18,7 +18,7 @@
 
 import { writeFileSync } from "node:fs";
 import { parseHTML } from "linkedom";
-const USER_AGENT = "votoscope-quebec/0.1 (https://github.com/votoscope/quebec; yysrk9lh@duck.com)";
+const USER_AGENT = "votovision-quebec/0.1 (https://github.com/votovision/quebec; yysrk9lh@duck.com)";
 
 const PAGE = "https://en.wikipedia.org/wiki/Candidates_in_the_2026_Quebec_general_election";
 const PARTY_COLUMNS: Record<string, string> = {

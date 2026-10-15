@@ -1,7 +1,7 @@
 /**
  * Run the full modelling pipeline once and write data/qc_projection.json for
  * the dashboard to display. Shared by the CLI (tools/compute.mjs) and the
- * data refresh (votoscope/data, then ingest/depuis_data.mjs), which imports it directly instead of
+ * data refresh (votovision/data, then ingest/depuis_data.mjs), which imports it directly instead of
  * spawning a subprocess.
  */
 

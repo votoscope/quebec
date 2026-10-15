@@ -103,7 +103,7 @@ async function exportRidingFeatures(
 export async function exportAll(): Promise<void> {
   mkdirSync(fileURLToPath(OUT_DIR), { recursive: true });
   const con = await connect();
-  // Sondages et résultats : dépôt votoscope/data (ingest/depuis_data.mjs).
+  // Sondages et résultats : dépôt votovision/data (ingest/depuis_data.mjs).
   write("qc_leaders.json", await exportLeaders(con), "party leaders");
   write("qc_incumbents.json", await exportIncumbents(con), "incumbents");
   // 2017-map features train the riding-effects model (the map the

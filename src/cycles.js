@@ -5,7 +5,7 @@
  * Before this module, cycle constants lived in SIX places (RUNBOOK §4):
  *   1. computeProjection.js : ELECTION_DATE, LEADERS_2022
  *   2. gpTrend.js : CHANGEPOINTS, CAMPAIGNS
- *   3. (ingestion, dépôt votoscope/data) : CYCLE_BOUNDARIES
+ *   3. (ingestion, dépôt votovision/data) : CYCLE_BOUNDARIES
  *   4. export_json.ts : by-election bounds
  *   5. candidates/leaders loaders
  *   6. baseline (re-aggregation)

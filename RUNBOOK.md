@@ -4,7 +4,7 @@ Procédure pour reprendre le modèle après des mois d'inactivité (gouvernement
 minoritaire : prochaines générales possibles dès 2028).
 
 Le dépôt contient le modèle ; les données (sondages, résultats officiels,
-recensement) viennent du dépôt `votoscope/data`, cloné à côté (`../data`).
+recensement) viennent du dépôt `votovision/data`, cloné à côté (`../data`).
 
 ## 1. Vérifier l'environnement
 

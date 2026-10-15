@@ -10,7 +10,7 @@
 coverage/
 *.lcov
 
-# Votoscope
+# Votovision
 node_modules/
 dist/
 data/raw/
@@ -21,7 +21,7 @@ capture_*.png
 CLAUDE.md
 AGENT.md
 
-# Votoscope
+# Votovision
 node_modules/
 dist/
 data/raw/

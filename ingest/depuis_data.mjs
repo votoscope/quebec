@@ -1,5 +1,5 @@
 /**
- * Entrées du modèle tirées du dépôt de données votoscope/data (clone voisin
+ * Entrées du modèle tirées du dépôt de données votovision/data (clone voisin
  * ../data, ou chemin donné en argument) : tables csv/sondages.csv,
  * csv/parts.csv et csv/resultats.csv réécrites aux formats JSON lus par le
  * modèle.
